@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500;700;800&display=swap');
+
+:root {
+
+    /* ======================= COLORS ======================= */
+    --hue-color: 355;
+    --first-color: hsl(var(--hue-color), 68%, 53%);
+    --first-color-light: hsl(var(--hue-color), 100%, 69%);
+
+    /* ======================= FONT AND TYPOGRAPHY ======================= */
+
+    --body-font: 'Merriweather Sans', sans-serif;
+
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    --font-light: 300;
+    --font-medium: 500;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+.nav_home {
+    width: 20vw;
+    text-align: center;
+    position: absolute;
+}
+
+.nav_home li {
+    list-style-type: none;
+    font-size: var(--big-font-size);
+    padding: 2rem;
+    color: #fff;
+    background-color: #464141;
+    cursor: pointer;
+}
+
+.nav_home li:hover {
+    background-color: hsl(0, 4%, 20%);
+}
+
+.nav_home li:active {
+    transform: scale(.95);
+}
+
+#browse {
+    background-color: #787171;
+}
+
+#browse:hover {
+    background-color: hsl(0, 3%, 40%);
+}
+
+.container_home {
+    background-image: url(./images/black-wallpaper-best.jpg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
