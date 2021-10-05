@@ -9,6 +9,7 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Sneaker WEB DAW1</title>
 </head>
@@ -17,6 +18,10 @@
 
     <header class="header">
         <img src="DAW1_resources/Logo_Web.png" alt="Logo_Web">
+        <div class="header_icons">
+            <i class='bx bx-user-circle header_icon'></i>
+            <i class='bx bx-cart-alt header_icon'></i>
+        </div>
     </header>
 
     <nav class="nav_home">
@@ -30,6 +35,13 @@
     </nav>
 
     <section class="container_home">
+        <div class="container_search">
+            <form action="">
+                <input type="search" required>
+                <i class="fa fa-search"></i>
+                <a href="javascript:void(0)" id="clear-btn">Clear</a>
+            </form>
+        </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
