@@ -1,0 +1,17 @@
+.ad-panel-about{
+    display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+  }
+
+  .single-ad-about{
+    margin-block: 20px;
+    width: 700px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+      flex-direction: row;
+    background-color: #b9b9b9;
+  }

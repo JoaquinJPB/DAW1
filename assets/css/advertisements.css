@@ -1,0 +1,25 @@
+.advertisements .fav-icon img {
+	object-fit: contain;
+	width: 25px;
+	height: 25px;
+}
+
+.advertisements .ad-image {
+	height: auto;
+}
+
+.advertisements .car-details {
+	width: 100%;
+}
+
+.advertisements .prices {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.advertisements .prices .group {
+	display: flex;
+	flex-direction: column;
+}
