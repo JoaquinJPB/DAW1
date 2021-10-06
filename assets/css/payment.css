@@ -1,0 +1,28 @@
+.payment {
+	background-color: darkgray;
+	padding: 15px;
+	margin-top: 5%;
+	border-radius: 15px;
+}
+
+.payment form {
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.payment .flex-vertical {
+	display: flex;
+	flex-direction: column;
+}
+
+.payment .size {
+	width: 45%;
+}
+
+.payment .card_number {
+	width: 100%;
+}

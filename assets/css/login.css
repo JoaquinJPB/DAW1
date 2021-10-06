@@ -1,0 +1,66 @@
+#iniciarSesion{
+    margin-top: 50px; 
+    text-align:center;
+}
+#loginForm{
+    font-family: 'Arial';
+    margin-top: 80px; 
+    width:350px; 
+    padding: 20px; 
+    margin:auto; 
+}
+#loginForm label{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 30px;
+}
+#loginForm section{
+    display:flex;
+}
+
+#loginForm section input{
+    outline: 0;
+    border-width: 0 0 0 2px;
+    border-color: rgba(0, 0, 255, 0.493);
+    color:#ffffff;
+    width: 100%;
+    align-items: center; 
+    margin-right: 10px; 
+    margin-bottom: 20px; 
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+#loginForm section textarea{
+    outline: 0;
+    border-width: 0 0 0 2px;
+    border-color: rgba(0, 0, 255, 0.493);
+    color:#ffffff;
+    width: 100%;
+    align-items: center; 
+    margin-right: 10px; 
+    margin-bottom: 20px; 
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.452);
+    resize: none;
+}
+
+#loginForm div{
+    display:flex;
+}
+
+#loginForm div input{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: rgba(0, 0, 255, 0.74);
+    color:#ffffff;
+    width: 100%;
+    align-items: center; 
+    margin-right: 10px; 
+    margin-bottom: 20px; 
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.849);
+}
+
+
