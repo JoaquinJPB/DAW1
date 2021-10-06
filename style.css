@@ -157,7 +157,7 @@ form:valid .fa {
     color: white;
 }
 
-a {
+.search_a {
     display: none;
     position: absolute;
     top: 70px;
