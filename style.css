@@ -79,6 +79,11 @@ body {
     transform: scale(.95);
 }
 
+.nav_home li a {
+    text-decoration: none;
+    color: var(--hue-color);
+}
+
 #browse {
     background-color: #787171;
 }
