@@ -15,6 +15,7 @@
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
+    --h4-font-size: 1.050rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
@@ -222,7 +223,6 @@ a:hover{
 .container_category{
     width: 100vw;
     height: 100vh;
-    margin-top: 5px;
 }
 
 .button_category{
@@ -280,4 +280,48 @@ a:hover{
 
 .title_sales:first-child{
     margin-bottom: 3rem;
+}
+
+/* ======================= Propular Brands ======================= */
+.container_products{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 5px;
+
+}
+
+.col-sm img{
+    width: 300px;
+    height: 250px;
+    border: solid 2px #c4c4c4;
+}
+
+.item_info{
+    background: #eeecec;
+    width: 300px;
+    height: 150px;
+    border-bottom: solid 2px #c4c4c4;
+    border-left: solid 2px #c4c4c4;
+    border-right: solid 2px #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h2{
+    margin-top: 1rem;
+}
+
+.item_title{
+    margin-left: .5rem;
+}
+
+.item_subtitle{
+    font-weight: var(--font-light);
+    font-size: var(--h4-font-size);
+    margin-left: .5rem;
+}
+
+.item_price{
+    align-self:flex-end;
 }
