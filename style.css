@@ -205,3 +205,77 @@ form:valid .fa {
 form:valid a {
     display: block;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/* ======================= WOMEN / MEN / SALES ======================= */
+.container_category{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 5px;
+}
+
+.button_category{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: white;
+    width: 80%;
+    padding: 1rem 0;
+    font-size: 3rem;
+    border: 5px rgb(255, 255, 255) solid;
+    margin-bottom: 10rem;
+}
+
+.button_category:hover{
+    color: black;
+    background: white;
+    opacity: 0.8;
+    border: 5px solid black;
+}
+
+.col_women{
+    background-image: url(./DAW1_resources/shopwomen.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.col_men{
+    background-image: url(./DAW1_resources/shopmen.jpeg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.col_sales{
+    background-color: var(--first-color);
+    height: 100vh;
+}
+
+.col_women,
+.col_men,
+.col_sales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.title_sales{
+    color: white;
+    text-align: center;
+    font-weight: 5rem;
+    margin-bottom: 10rem;
+}
+
+.title_sales:first-child{
+    margin-bottom: 3rem;
+}
+
