@@ -79,6 +79,38 @@ body {
     transform: scale(.95);
 }
 
+
+
+.nav_shop{
+    height: auto;
+    background-color:#464141;
+    text-align: center;
+  }
+
+.nav_shop ul{
+    list-style: none;
+    display: inline-block;
+    padding:18px;
+}
+
+.nav_shop ul li{
+    float: left;
+    font-size: var(--h2-font-size);
+    margin-top: 20px;
+}
+
+.nav_shop ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 50px;
+    padding: 18px;
+}
+
+.nav_shop ul li a:hover{
+    background-color: hsl(var(--hue-color), 100%, 69%);
+}
+
 #browse {
     background-color: #787171;
 }
@@ -88,7 +120,7 @@ body {
 }
 
 .container_home {
-    background-image: url(./images/bg2-web.png);
+    background-image: url(./DAW1_resources/images/bg2-web.png);
     background-size: 100% 100%;
     height: calc(100vh - 152px);
 }
