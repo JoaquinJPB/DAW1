@@ -40,6 +40,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 120px;
+}
+
+.header img{
+    height: 120px;
 }
 
 .header_icons {
@@ -79,13 +84,11 @@ body {
     transform: scale(.95);
 }
 
-
-
 .nav_shop{
     height: auto;
     background-color:#464141;
     text-align: center;
-  }
+}
 
 .nav_shop ul{
     list-style: none;
@@ -122,10 +125,10 @@ body {
 .container_home {
     background-image: url(./DAW1_resources/images/bg2-web.png);
     background-size: 100% 100%;
-    height: calc(100vh - 152px);
+    height: calc(100vh - 120px);
 }
 
-/* SEARCH */
+/* ======================= SEARCH ======================= */
 
 form {
     position: relative;
@@ -278,4 +281,3 @@ a:hover{
 .title_sales:first-child{
     margin-bottom: 3rem;
 }
-
