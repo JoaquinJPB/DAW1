@@ -15,6 +15,7 @@
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
+    --h4-font-size: 1.050rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
@@ -40,6 +41,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 120px;
+}
+
+.header img{
+    height: 120px;
 }
 
 .header_icons {
@@ -79,9 +85,34 @@ body {
     transform: scale(.95);
 }
 
-.nav_home li a {
+.nav_shop{
+    height: auto;
+    background-color:#464141;
+    text-align: center;
+}
+
+.nav_shop ul{
+    list-style: none;
+    display: inline-block;
+    padding:18px;
+}
+
+.nav_shop ul li{
+    float: left;
+    font-size: var(--h2-font-size);
+    margin-top: 20px;
+}
+
+.nav_shop ul li a {
+    color: white;
+    font-weight: bold;
     text-decoration: none;
-    color: var(--hue-color);
+    font-size: 50px;
+    padding: 18px;
+}
+
+.nav_shop ul li a:hover{
+    background-color: hsl(var(--hue-color), 100%, 69%);
 }
 
 #browse {
@@ -93,12 +124,12 @@ body {
 }
 
 .container_home {
-    background-image: url(./images/bg2-web.png);
+    background-image: url(./DAW1_resources/images/bg2-web.png);
     background-size: 100% 100%;
-    height: calc(100vh - 152px);
+    height: calc(100vh - 120px);
 }
 
-/* SEARCH */
+/* ======================= SEARCH ======================= */
 
 form {
     position: relative;
@@ -177,4 +208,120 @@ form:valid .fa {
 
 form:valid a {
     display: block;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/* ======================= WOMEN / MEN / SALES ======================= */
+.container_category{
+    width: 100vw;
+    height: 100vh;
+}
+
+.button_category{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: white;
+    width: 80%;
+    padding: 1rem 0;
+    font-size: 3rem;
+    border: 5px rgb(255, 255, 255) solid;
+    margin-bottom: 10rem;
+}
+
+.button_category:hover{
+    color: black;
+    background: white;
+    opacity: 0.8;
+    border: 5px solid black;
+}
+
+.col_women{
+    background-image: url(./DAW1_resources/shopwomen.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.col_men{
+    background-image: url(./DAW1_resources/shopmen.jpeg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.col_sales{
+    background-color: var(--first-color);
+    height: 100vh;
+}
+
+.col_women,
+.col_men,
+.col_sales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.title_sales{
+    color: white;
+    text-align: center;
+    font-weight: 5rem;
+    margin-bottom: 10rem;
+}
+
+.title_sales:first-child{
+    margin-bottom: 3rem;
+}
+
+/* ======================= Propular Brands ======================= */
+.container_products{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 5px;
+
+}
+
+.col-sm img{
+    width: 300px;
+    height: 250px;
+    border: solid 2px #c4c4c4;
+}
+
+.item_info{
+    background: #eeecec;
+    width: 300px;
+    height: 150px;
+    border-bottom: solid 2px #c4c4c4;
+    border-left: solid 2px #c4c4c4;
+    border-right: solid 2px #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h2{
+    margin-top: 1rem;
+}
+
+.item_title{
+    margin-left: .5rem;
+}
+
+.item_subtitle{
+    font-weight: var(--font-light);
+    font-size: var(--h4-font-size);
+    margin-left: .5rem;
+}
+
+.item_price{
+    align-self:flex-end;
 }

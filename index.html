@@ -25,13 +25,14 @@
     </header>
 
     <nav class="nav_home">
-        <ul>
+        <div>
             <li id="browse">Browse</li>
             <li>About</li>
             <li>Help</li>
-            <li><a href="login.html">Log In</a></li>
+            <a href="login.html"><li>Log In</li></a>
             <li>Sign In</li>
-        </ul>
+            <a href="shop.html"><li>Shop</li></a>
+        </div>
     </nav>
 
     <section class="container_home">
@@ -44,28 +45,86 @@
         </div>
     </section>
 
-    <section class="shop"> <!-- poner que no roce los bordes en CSS-->
-        <div>
-            <img src="DAW1_resources/shopwomen.png" alt="Shop Women">
-        </div>
+    <section class="container-fluid container_category">
+        <div class="row">
+            <div class="col-sm col_women">
+                <button type="button" class="button_category">WOMEN</button>
+            </div>
 
-        <div>
-            <img src="DAW1_resources/shopmen.jpeg" alt="Shop Men">
-        </div>
+            <div class="col-sm col_men">
+                <button type="button" class="button_category">MEN</button>
+            </div>
 
-        <div>
-            SALES
+            <div class="col-sm col_sales">
+                <h1 class="title_sales">FALL 2021 SALE</h1>
+                <h1 class="title_sales">UP TO 60 OFF</h1>
+                <button type="button" class="button_category">SALES</button>
+            </div>
         </div>
-
-        
     </section>
 
-    <section class="products">
+    <section class="container-fluid container_products">
+        <h2>Popular Brands</h2>
+        <div class="row">
+            <div class="col-sm">
+                <img src="./DAW1_resources/clothing_nike.png" alt="clothing_nike">
+            </div>
 
+            <div class="col-sm">
+                <img src="./DAW1_resources/clothing_adidas.png" alt="clothing_adidas">
+            </div>
+            
+            <div class="col-sm">
+                <img src="./DAW1_resources/sneakers_jordan1.png" alt="sneakers_jordan1">
+            </div>
+            
+            <div class="col-sm">
+                <img src="./DAW1_resources/sneakers_newbalance.png" alt="sneakers_newbalance">
+            </div>
+        </div>
+        
+        <h2>Most Popular Sneakers</h2>
+        <div class="row">
+            <div class="col-sm">
+                <img src="./DAW1_resources/air_force_one.png" alt="air_force_one">
+                <div class="item_info">
+                    <h3 class="item_title">Nike Air Force 1 Low</h3>
+                    <h4 class="item_subtitle">White '07</h4>
+                    <h3 class="item_price">89€</h3>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <img src="./DAW1_resources/yeezy.png" alt="yeezy">
+                <div class="item_info">
+                    <h3 class="item_title">Adidas Yeezy Boost 700 Wave Runner</h3>
+                    <h4 class="item_subtitle">Solid Grey</h4>
+                    <h3 class="item_price">359€</h3>
+                </div>
+            </div>
+            
+            <div class="col-sm">
+                <img src="./DAW1_resources/blue_jordan.png" alt="blue_jordan">
+                <div class="item_info"> 
+                    <h3 class="item_title">Jordan 1 Retro High OG</h3>
+                    <h4 class="item_subtitle">White University Blue Black</h4>
+                    <h3 class="item_price">357€</h3>
+                </div>
+            </div>
+            
+            <div class="col-sm">
+                <img src="./DAW1_resources/newbalance_grey.png" alt="newbalance_grey">
+                <div class="item_info">
+                    <h3 class="item_title">New Balance 992</h3>
+                    <h4 class="item_subtitle">Grey</h4>
+                    <h3 class="item_price">200€</h3>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
-        
+
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
