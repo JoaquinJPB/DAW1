@@ -327,7 +327,6 @@ h2{
     align-self:flex-end;
 }
 
-<<<<<<< HEAD
 /* ======================= LOGIN ======================= */
 .container_login{
     margin-top: 2rem;
@@ -445,7 +444,7 @@ footer p{
 
 hr{
     color: #eeecec;
-=======
+}
 /* ======================= About Us ======================= */
 .horizontal_nav {
     padding: 2rem;
@@ -522,5 +521,4 @@ hr{
 .about_desc_left {
     margin: 4rem 0 0 4rem;
     text-align: justify;
->>>>>>> natanael
 }
