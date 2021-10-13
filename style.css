@@ -325,3 +325,11 @@ h2{
 .item_price{
     align-self:flex-end;
 }
+
+/* ======================= Footer ======================= */
+
+footer{
+    background: #07051a;
+    width: 100vw;
+    height: 25vh;
+}
