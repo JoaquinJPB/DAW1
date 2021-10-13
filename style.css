@@ -327,6 +327,7 @@ h2{
     align-self:flex-end;
 }
 
+<<<<<<< HEAD
 /* ======================= LOGIN ======================= */
 .container_login{
     margin-top: 2rem;
@@ -444,4 +445,82 @@ footer p{
 
 hr{
     color: #eeecec;
+=======
+/* ======================= About Us ======================= */
+.horizontal_nav {
+    padding: 2rem;
+}
+
+.horizontal_nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.horizontal_nav li {
+    float: left;
+}
+
+.horizontal_nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 2rem 2.5rem;
+    text-decoration: none;
+}
+  
+.horizontal_nav li a:hover:not(.active) {
+    background-color: var(--first-color-light);
+}
+  
+.horizontal_nav .active {
+    background-color: var(--first-color);
+    color: white;
+}
+
+.div_about {
+    width: 100vw;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.div_about h1 {
+    margin: 6rem 6rem 2.5rem;
+}
+
+.div_about h3 {
+    text-align: justify;
+    margin: 0 6rem 6rem;
+}
+
+.about_description {
+    background-color: #c4c4c4;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about_description img {
+    margin: 4rem;
+    width: 45vw;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+.about_desc_right {
+    margin: 4rem 4rem 0 0;
+    text-align: justify;
+}
+
+.about_desc_left {
+    margin: 4rem 0 0 4rem;
+    text-align: justify;
+>>>>>>> natanael
 }
