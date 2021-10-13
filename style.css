@@ -327,6 +327,40 @@ h2{
 }
 
 /* ======================= About Us ======================= */
+.horizontal_nav {
+    padding: 2rem;
+}
+
+.horizontal_nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .horizontal_nav li {
+    float: left;
+  }
+  
+  .horizontal_nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 2rem 2.5rem;
+    text-decoration: none;
+  }
+  
+  .horizontal_nav li a:hover:not(.active) {
+    background-color: var(--first-color-light);
+  }
+  
+  .horizontal_nav .active {
+    background-color: var(--first-color);
+    color: white;
+  }
+
+
 .div_about {
     width: 100vw;
     height: fit-content;
