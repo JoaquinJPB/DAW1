@@ -411,6 +411,37 @@ h2{
 
 footer{
     background: #07051a;
+    position: absolute;
     width: 100vw;
-    height: 25vh;
+    height: 60vh;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+}
+
+footer img{
+    height: 120px;
+}
+
+.footer_icon{
+    font-size: 2rem;
+}
+
+footer li{
+    color: #fff;
+    list-style-type: none;
+}
+
+footer p{
+    color: #fff;
+}
+
+hr{
+    color: #eeecec;
 }
