@@ -337,29 +337,28 @@ h2{
     padding: 0;
     overflow: hidden;
     background-color: white;
-  }
-  
-  .horizontal_nav li {
+}
+
+.horizontal_nav li {
     float: left;
-  }
-  
-  .horizontal_nav li a {
+}
+
+.horizontal_nav li a {
     display: block;
     color: black;
     text-align: center;
     padding: 2rem 2.5rem;
     text-decoration: none;
-  }
+}
   
-  .horizontal_nav li a:hover:not(.active) {
+.horizontal_nav li a:hover:not(.active) {
     background-color: var(--first-color-light);
-  }
+}
   
-  .horizontal_nav .active {
+.horizontal_nav .active {
     background-color: var(--first-color);
     color: white;
-  }
-
+}
 
 .div_about {
     width: 100vw;
