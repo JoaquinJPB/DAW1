@@ -131,7 +131,6 @@ body {
 }
 
 /* ======================= SEARCH ======================= */
-
 .form_search {
     position: relative;
     bottom: -225px;
@@ -260,6 +259,7 @@ body {
 
 .col_sales{
     background-color: var(--first-color);
+    width: 100vw;
     height: 100vh;
 }
 
@@ -283,18 +283,16 @@ body {
     margin-bottom: 3rem;
 }
 
-/* ======================= Propular Brands ======================= */
+/* ======================= POPULAR BRANDS ======================= */
 .container_products{
-    width: 100vw;
     height: 100vh;
     margin-top: 5px;
-
 }
 
-.col-sm img{
+.brand_popular img{
+    border: solid 2px #c4c4c4;
     width: 300px;
     height: 250px;
-    border: solid 2px #c4c4c4;
 }
 
 .item_info{
@@ -326,6 +324,146 @@ h2{
 .item_price{
     align-self:flex-end;
 }
+
+/* ======================= FOOTER ======================= */
+footer{
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.footer_div_father{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    padding-top: 5rem;
+    width: 80%;
+}
+
+.footer_div_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_div_1 p {
+    font-size: var(--normal-font-size);
+}
+
+.footer_div_2 {
+    margin-top: 5rem;
+}
+
+.footer_div_2 h5 {
+    padding-bottom: 2rem;
+}
+
+.footer_div_2 span {
+    padding-bottom: 2rem;
+}
+
+hr{
+    background-color: white;
+    width: 90.5%;
+    margin-left: 6.5rem;
+}
+
+.footer_icon{
+    font-size: 2rem;
+    border: white solid 1px;
+    padding: .5rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.footer_down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_down div {
+    margin: 2rem 2rem 2rem 6rem;
+}
+
+/* ======================= ABOUT US ======================= */
+.horizontal_nav {
+    padding: 2rem;
+}
+
+.horizontal_nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.horizontal_nav li {
+    float: left;
+}
+
+.horizontal_nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 2rem 2.5rem;
+    text-decoration: none;
+}
+
+.horizontal_nav li a:hover:not(.active) {
+    background-color: var(--first-color-light);
+}
+
+.horizontal_nav .active {
+    background-color: var(--first-color);
+    color: white;
+}
+
+.div_about {
+    width: 100vw;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.div_about h1 {
+    margin: 6rem 6rem 2.5rem;
+}
+
+.div_about h3 {
+    text-align: justify;
+    margin: 0 6rem 6rem;
+}
+
+.about_description {
+    background-color: #c4c4c4;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about_description img {
+    margin: 4rem;
+    width: 45vw;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+.about_desc_right {
+    margin: 4rem 4rem 0 0;
+    text-align: justify;
+}
+
+.about_desc_left {
+    margin: 4rem 0 0 4rem;
+    text-align: justify;
+}
+
 
 /* ======================= LOGIN ======================= */
 .container_login{
@@ -403,122 +541,4 @@ h2{
     color: white;
     align-self: end;
     margin-top: 1rem;
-}
-
-/* ======================= MY PROFILE ======================= */
-
-/* ======================= Footer ======================= */
-
-footer{
-    background: #07051a;
-    position: absolute;
-    width: 100vw;
-    height: 60vh;
-    margin-top: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    
-}
-
-footer div{
-    display: flex;
-    flex-direction: row;
-}
-
-footer img{
-    height: 120px;
-}
-
-.footer_icon{
-    font-size: 2rem;
-}
-
-footer li{
-    color: #fff;
-    list-style-type: none;
-}
-
-footer p{
-    color: #fff;
-}
-
-hr{
-    color: #eeecec;
-}
-/* ======================= About Us ======================= */
-.horizontal_nav {
-    padding: 2rem;
-}
-
-.horizontal_nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-}
-
-.horizontal_nav li {
-    float: left;
-}
-
-.horizontal_nav li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 2rem 2.5rem;
-    text-decoration: none;
-}
-  
-.horizontal_nav li a:hover:not(.active) {
-    background-color: var(--first-color-light);
-}
-  
-.horizontal_nav .active {
-    background-color: var(--first-color);
-    color: white;
-}
-
-.div_about {
-    width: 100vw;
-    height: fit-content;
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.div_about h1 {
-    margin: 6rem 6rem 2.5rem;
-}
-
-.div_about h3 {
-    text-align: justify;
-    margin: 0 6rem 6rem;
-}
-
-.about_description {
-    background-color: #c4c4c4;
-    width: 100vw;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.about_description img {
-    margin: 4rem;
-    width: 45vw;
-    box-shadow: 0px 0px 10px 1px black;
-}
-
-.about_desc_right {
-    margin: 4rem 4rem 0 0;
-    text-align: justify;
-}
-
-.about_desc_left {
-    margin: 4rem 0 0 4rem;
-    text-align: justify;
 }
