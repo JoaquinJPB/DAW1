@@ -542,3 +542,26 @@ hr{
     align-self: end;
     margin-top: 1rem;
 }
+
+
+/* ======================= Pago ======================= */
+.pago_form{
+    position: absolute;
+    padding: 5px;
+}
+
+.pago_form input[type=text]{
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: block;
+}
+
+.pago_form input[type=button], input[type=submit], input[type=reset] {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
