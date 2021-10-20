@@ -542,3 +542,35 @@ hr{
     align-self: end;
     margin-top: 1rem;
 }
+
+/* ======================= PRODUCTO ======================= */
+
+.product {
+    background-color: white;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.size {
+    margin-right: 3rem;
+}
+
+.product img {
+    margin: 4rem;
+    width: 45vw;
+}
+
+.product h3 {
+    font-weight: lighter;
+}
+
+.labels {
+    width: fit-content;
+    border: rgb(61, 61, 61) 2px solid;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    display: inline-block;
+}
