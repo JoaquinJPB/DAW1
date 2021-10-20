@@ -549,7 +549,6 @@ hr{
 }
 
 /* ======================= PRODUCT ======================= */
-
 .product {
     background-color: white;
     width: 100vw;
@@ -627,11 +626,12 @@ aside h2 {
 }
 
 .size_types input {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .size_types label {
-    margin-left: 1rem;
+    margin: .5rem 0 0 1rem;
+    font-size: 1.5rem;
 }
 
 .price_range input[type="range"]{
@@ -648,6 +648,7 @@ aside h2 {
     background-color: rgba(0, 0, 0, 0.04);
     margin-top: 2rem;
     width: 450px;
+    height: 300px;
 }
 
 h4{
