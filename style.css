@@ -658,6 +658,7 @@ h4{
 h5{
     color: #c4c4c4;
     font-weight: var(--font-light);
+<<<<<<< HEAD
 }
 
 /* ======================= REGISTER ======================= */
@@ -669,4 +670,6 @@ h5{
     width: 50vw;
     border-radius: 2rem;
     padding: 2rem;
+=======
+>>>>>>> cc58e8e556ab75fac473956b33052c6cccb12594
 }
