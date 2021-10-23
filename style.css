@@ -42,7 +42,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 120px;
-    box-shadow: 0px 0px 10px 1px black;
+    box-shadow: 0px 0px 10px 1px #c4c4c4;
 }
 
 .header img{
@@ -520,10 +520,15 @@ hr{
     background-repeat: no-repeat;
     color: white;
     border-radius: .25rem;
+    border: white 1px solid; 
     width: 100%;
     padding: 1rem;
     font-weight: 300;
     margin: .5rem;
+}
+
+.input_login::placeholder{
+    color: white;
 }
 
 .button_login{
@@ -543,8 +548,7 @@ hr{
     margin-top: 1rem;
 }
 
-/* ======================= PRODUCTO ======================= */
-
+/* ======================= PRODUCT ======================= */
 .product {
     background-color: white;
     width: 100vw;
@@ -552,6 +556,7 @@ hr{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 6rem 0 2rem;
 }
 
 .size {
@@ -573,4 +578,95 @@ hr{
     padding: 0.5rem;
     border-radius: 3rem;
     display: inline-block;
+}
+
+.div_sizes div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.75rem;
+}
+
+.div_sizes h4{
+    padding: 1rem;
+    height: 60px;
+    width: 100px;
+    border: 1px solid black;
+    font-weight: var(--font-light);
+    text-align: center;
+}
+
+.div_sizes button {
+    border: 0;
+    background-color: var(--first-color);
+    color: white;
+    width: 100%;
+    margin-top: 0.75rem;
+    padding: 1rem;
+    font-size: var(--h2-font-size);
+}
+
+/* ======================= SHOP ======================= */
+
+aside{
+    float: left;
+}
+
+aside h2 {
+    margin: 0;
+}
+
+.categories,
+.brands,
+.size_types,
+.price_range {
+    margin: 8rem 2rem 0 4rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.size_types input {
+    margin-top: 2rem;
+}
+
+.size_types label {
+    margin: .5rem 0 0 1rem;
+    font-size: 1.5rem;
+}
+
+.price_range input[type="range"]{
+    margin-top: 1rem;
+}
+
+.section_shop{
+    margin: 2rem 0 6rem 0;
+    width: 100vw;
+    height: fit-content;
+}
+
+.shop_item{
+    background-color: rgba(0, 0, 0, 0.04);
+    margin-top: 2rem;
+    width: 450px;
+    height: 300px;
+}
+
+h4{
+    margin-top: .5rem;
+}
+
+h5{
+    color: #c4c4c4;
+    font-weight: var(--font-light);
+}
+
+/* ======================= REGISTER ======================= */
+
+.container_register{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: hsl(355, 68%, 53%);
+    width: 50vw;
+    border-radius: 2rem;
+    padding: 2rem;
 }
