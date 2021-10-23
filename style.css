@@ -756,3 +756,13 @@ h5{
     height: 20px;
 }
 
+/* ======================= REGISTER ======================= */
+
+.container_register{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: hsl(355, 68%, 53%);
+    width: 50vw;
+    border-radius: 2rem;
+    padding: 2rem;
+}
