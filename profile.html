@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Log in</title>
+    <title>My profile</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
@@ -16,53 +16,63 @@
     <header class="header">
         <a href="index.html"><img src="DAW1_resources/Logo_Web.png" alt="Logo_Web"></a>
     </header>
-    <main>
-        <section>
-            <img src="../DAW1/DAW1_resources/images/Perfil/photo.png" alt="Profile Picture">
-            <input type="button" value="Edit profile">
-            <h2>@PQuinata</h2>
-            <label for="">Aguadulce 22 2D</label>
-            <label for="">1,024</label>
-            <input type="button" value="Orders">
-            <input type="button" value="Details">
-            <input type="button" value="Sign out">
 
+    <main class="main_profile d-flex flex-row">
+
+        <section class="d-flex flex-column section_profile_left">
+            <img class="img-fluid" src="./DAW1_resources/images/Profile/photo.png" alt="Profile Picture">
+            <button><span>Edit profile<i class='bx bxs-user-circle icon_profile'></i></span></button>
+            <h2>@PQuintana</h2>
+            <span><i class='bx bxs-map'></i>Aguadulce 22 2D</span>
+            <span><i class='bx bxs-group'></i>1,024 followers</span>
+            <div>
+                <button><span>Orders<i class='bx bxs-truck icon_profile'></i></button></span>
+                <button><span>Details<i class='bx bxs-envelope-open icon_profile'></i></button></span>
+                <button><span>Coupons<i class='bx bxs-discount icon_profile'></i></button></span>
+            </div>
         </section>
 
-        <section>
+        <section class="d-flex flex-column section_profile_right">
             <h3>My Account</h3>
-            <div>
-                <h4>CONTACT INFORMATION</h4>
-                <label for="">Pedro Quintana</label>
-                <label for="">pquintana@gmail.com</label>
-                <input type="button" value="EDIT">
-                <input type="button" value="CHANGE PASSWORD">
-            </div>
-            <div>
-                <h4>MY PAYMENTS METHODS</h4>
-                <label for="">Pedro Quinata pquintana@gmail.com</label>
-                <input type="checkbox">
-                <label for="">Set as default payment method</label>
-                <input type="button" value="ADD PAYMENT METHOD">
-            </div>
+            <article>
+                <div>
+                    <h4>CONTACT INFORMATION</h4>
+                    <span>Pedro Quintana</span>
+                    <span>pquintana@gmail.com</span>
+                    <div>
+                        <button>EDIT</button>
+                        <button>CHANGE PASSWORD</button>
+                    </div>
+                </div>
+                <div>
+                    <h4>MY PAYMENTS METHODS</h4>
+                    <span><img src="DAW1_resources/paypal.png" alt="Paypal">Pedro Quinata pquintana@gmail.com</span>
+                    <span><input type="checkbox">Set as default payment method</span>
+                    <button>ADD PAYMENT METHOD</button>
+                </div>
+            </article>
 
             <h3>Address Information</h3>
-            <div>
-                <h4>BILLING</h4>
-                <label for="">Pedro Quintana</label>
-                <label for="">Aguadulce 22 2D</label>
-                <label for="">España</label>
-                <label for="">658587896</label>
-                <input type="button" value="EDIT ADDRESS">
-            </div>
-            <div>
-                <h4>SHIPPING</h4>
-                <label for="">Pedro Quintana</label>
-                <label for="">Aguadulce 22 2D</label>
-                <label for="">España</label>
-                <label for="">658587896</label>
-                <input type="button" value="EDIT ADDRESS">
-            </div>
+
+            <article>
+                <div>
+                    <h4>BILLING</h4>
+                    <span>Pedro Quintana</span>
+                    <span>Aguadulce 22 2D</span>
+                    <span>España</span>
+                    <span>658587896</span>
+                    <button>EDIT ADDRESS</button>
+                </div>
+                <div>
+                    <h4>SHIPPING</h4>
+                    <span>Pedro Quintana</span>
+                    <span>Aguadulce 22 2D</span>
+                    <span>España</span>
+                    <span>658587896</span>
+                    <button>EDIT ADDRESS</button>
+                </div>
+            </article>
+
         </section>
     </main>
 </body>

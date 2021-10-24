@@ -37,6 +37,11 @@ body {
     font-family: var(--body-font);
 }
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -293,6 +298,7 @@ body {
     border: solid 2px #c4c4c4;
     width: 300px;
     height: 250px;
+    cursor: pointer;
 }
 
 .item_info{
@@ -305,6 +311,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 h2{
@@ -608,11 +615,7 @@ hr{
 
 /* ======================= SHOP ======================= */
 
-aside{
-    float: left;
-}
-
-aside h2 {
+.section_shop_left h2 {
     margin: 0;
 }
 
@@ -620,7 +623,7 @@ aside h2 {
 .brands,
 .size_types,
 .price_range {
-    margin: 8rem 2rem 0 4rem;
+    margin: 7.5rem 2rem 0 4rem;
     cursor: pointer;
     width: fit-content;
 }
@@ -638,7 +641,7 @@ aside h2 {
     margin-top: 1rem;
 }
 
-.section_shop{
+.section_shop_right{
     margin: 2rem 0 6rem 0;
     width: 100vw;
     height: fit-content;
@@ -766,3 +769,135 @@ h5{
     border-radius: 2rem;
     padding: 2rem;
 }
+
+/* ======================= PROFILE ======================= */
+
+.main_profile{
+    width: 100vw;
+    height: 100vh;
+}
+
+.main_profile button{
+    padding: .5rem;
+    background-color: var(--first-color);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: var(--font-bold);
+    border: none;
+}
+
+.section_profile_left{
+    flex: 25%;
+    margin: 2.5rem 1rem 1rem 1.5rem;
+}
+
+.section_profile_left img {
+    width: 300px;
+    height: auto;
+}
+
+.section_profile_left > button:nth-child(2){
+    margin-top: 1.5rem;
+}
+
+.section_profile_left h2{
+    font-size: var(--h2-font-size);
+    color: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.icon_profile{
+    font-size: 2rem;
+    margin-left: .5rem;
+}
+
+.section_profile_left button span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section_profile_left > span:nth-child(4),
+.section_profile_left > span:nth-child(5){
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgba(0, 0, 0, .4);
+    font-size: var(--h4-font-size);
+}
+
+.section_profile_left div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2.75rem;
+    height: 30vh;
+}
+
+.section_profile_right{
+    flex: 75%;
+    margin: 2rem 0 2rem 2rem;
+}
+
+.section_profile_right article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.section_profile_right article > div {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: auto;
+    border: solid 2px var(--first-color);
+    border-radius: .5rem;
+    padding: 1.5rem;
+}
+
+.section_profile_right h3 {
+    font-size: var(--big-font-size);
+    text-decoration: underline;
+    margin-bottom: 1.5rem;
+}
+
+.section_profile_right h3:nth-child(3){
+    margin-top: 1.5rem;
+}
+
+.section_profile_right article div {
+    margin-right: 4rem;
+}
+
+.section_profile_right article div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.section_profile_right article div > div button:nth-child(1){
+    padding: .5rem 3rem;
+}
+
+.section_profile_right article div button{
+    margin-top: 1rem;
+}
+
+.section_profile_right article div span{
+    margin: .5rem 0 .5rem 0;
+    font-weight: var(--font-light);
+}
+
+.section_profile_right article div span img{
+    width: 70px;
+    height: auto;
+}
+.section_profile_right article div span img,
+.section_profile_right article div span input{
+    margin-right: 1rem;
+}
+
