@@ -227,7 +227,7 @@ a, a:hover, a:focus, a:active {
 /* ======================= WOMEN / MEN / SALES ======================= */
 .container_category{
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
 }
 
 .button_category{
@@ -290,8 +290,9 @@ a, a:hover, a:focus, a:active {
 
 /* ======================= POPULAR BRANDS ======================= */
 .container_products{
-    height: 100vh;
-    margin-top: 5px;
+    height: fit-content;
+    width: 100vw;
+    padding: 3rem 4rem;
 }
 
 .brand_popular img{
@@ -314,10 +315,6 @@ a, a:hover, a:focus, a:active {
     cursor: pointer;
 }
 
-h2{
-    margin-top: 1rem;
-}
-
 .item_title{
     margin-left: .5rem;
 }
@@ -331,6 +328,11 @@ h2{
 .item_price{
     align-self:flex-end;
 }
+
+.container_products h2:nth-child(3){
+    margin-top: 1rem;
+}
+
 
 /* ======================= FOOTER ======================= */
 footer{
