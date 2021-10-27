@@ -803,6 +803,7 @@ h5{
 }
 
 .section_profile_left h2{
+    margin-top: 1rem;
     font-size: var(--h2-font-size);
     color: rgba(0, 0, 0, .4);
     text-align: center;
