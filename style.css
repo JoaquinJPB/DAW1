@@ -674,8 +674,25 @@ hr {
 }
 
 .tarjeta_producto {
-    border: solid 1px black;
-    padding-bottom: 1rem;
+    border: solid 1px #a68b81;
+    padding: 1rem;
+}
+
+.tarjeta_producto h4 {
+    margin-top: 1rem;
+}
+
+.tarjeta_producto h4:hover {
+    font-weight: bold;
+}
+
+.tarjeta_producto h5:hover {
+    font-weight: bolder;
+    color: black;
+}
+
+.row {
+    margin-top: 2rem;
 }
 
 .section_shop_right h5 {
