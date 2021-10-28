@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;500;700;800&display=swap');
-:root {
+ :root {
     /* ======================= COLORS ======================= */
     --hue-color: 355;
     --first-color: hsl(var(--hue-color), 68%, 53%);
@@ -127,6 +127,8 @@ a:active {
 
 .container_home {
     background-image: url(./DAW1_resources/images/bg2-web.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100% 100%;
     height: calc(100vh - 120px);
 }
@@ -298,9 +300,8 @@ a:active {
 }
 
 .brand_popular img {
-    border: solid 2px #c4c4c4;
-    width: 300px;
-    height: 250px;
+    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
     cursor: pointer;
 }
 
@@ -436,9 +437,13 @@ hr {
 
 .div_about {
     width: 100vw;
-    height: fit-content;
-    background-color: black;
-    color: white;
+    background-image: url(./DAW1_resources/images/sneakers.jpeg);
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
     display: flex;
     flex-direction: column;
 }
@@ -674,8 +679,13 @@ hr {
 }
 
 .tarjeta_producto {
-    box-shadow: 15px 12px 15px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.2);
     padding: 1rem;
+    margin: 1rem;
+}
+
+.columna {
+    height: 100%;
 }
 
 .tarjeta_producto h4 {
@@ -694,6 +704,10 @@ hr {
 .section_shop_right h5 {
     color: #c4c4c4;
     font-weight: var(--font-light);
+}
+
+.section_shop_right .row {
+    margin-top: 2rem;
 }
 
 
@@ -935,4 +949,27 @@ h5 {
 .section_profile_right article div span img,
 .section_profile_right article div span input {
     margin-right: 1rem;
+}
+
+.swiper {
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide {
+    background: #fff;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-prev {
+    margin: 0 !important;
+}
+
+margin: 0 !important;
+
 }
