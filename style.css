@@ -674,7 +674,7 @@ hr {
 }
 
 .tarjeta_producto {
-    border: solid 1px #a68b81;
+    box-shadow: 15px 12px 15px 12px rgba(0, 0, 0, 0.2);
     padding: 1rem;
 }
 
