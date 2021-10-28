@@ -691,10 +691,6 @@ hr {
     color: black;
 }
 
-.row {
-    margin-top: 2rem;
-}
-
 .section_shop_right h5 {
     color: #c4c4c4;
     font-weight: var(--font-light);
