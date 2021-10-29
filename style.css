@@ -293,6 +293,19 @@ a:active {
 
 /* ======================= POPULAR BRANDS ======================= */
 
+.div_titulo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.linea {
+    width: 60vw;
+    max-width: 100%;
+    height: 3px;
+    background-color: var(--first-color);
+    margin: 0 2rem;
+}
+
 .container_products {
     height: fit-content;
     width: 100vw;
@@ -333,7 +346,9 @@ a:active {
 }
 
 .container_products h2:nth-child(3) {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -439,11 +454,10 @@ hr {
     width: 100vw;
     background-image: url(./DAW1_resources/images/sneakers.jpeg);
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: black;
+    color: white;
     display: flex;
     flex-direction: column;
 }
@@ -966,10 +980,7 @@ h5 {
     align-items: center;
 }
 
-.swiper-button-prev {
-    margin: 0 !important;
-}
-
-margin: 0 !important;
-
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--first-color);
 }
