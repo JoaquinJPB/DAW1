@@ -837,9 +837,10 @@ h5 {
     padding: 2rem;
 }
 
-.social_media{
+.social_media {
     margin: 1rem 0 0 1rem;
 }
+
 
 /* ======================= PROFILE ======================= */
 
@@ -973,70 +974,61 @@ h5 {
     margin-right: 1rem;
 }
 
+
 /* ======================= SWIPER CONFIGURATION ======================= */
+
 .swiper-button-prev:after,
-.swiper-button-next:after{
+.swiper-button-next:after {
     content: '';
 }
 
-.swiper-icon{
+.swiper-icon {
     font-size: 4rem;
     color: var(--first-color);
 }
-
 
 
 /* .swiper-button-prev {
     left: 100px;
 } */
 
+
 /* ======================= MEDIA QUERIES ======================= */
 
 @media screen and (max-width: 768px) {
-
-    .header{
+    .header {
         display: none;
     }
-
     /* ======================= LOG IN ======================= */
-
     .container_login,
-    .container_register{
+    .container_register {
         width: 100vw;
         height: fit-content;
         margin: 0;
         border-radius: 0;
     }
-
     /* ======================= FOOTER ======================= */
-
-    footer hr{
+    footer hr {
         display: none;
     }
-    
-    .footer_div_father{
+    .footer_div_father {
         width: 100%;
         flex-direction: column;
         padding-left: 2rem;
     }
-
-    .footer_down{
+    .footer_down {
         flex-direction: column;
         align-items: center;
     }
-
     .footer_down div {
         margin: 1rem 0 1rem 0;
     }
-
     .footer_div_2 {
         margin-top: 2rem;
     }
-
-    .footer_div_2 h5{
+    .footer_div_2 h5 {
         text-align: center;
     }
-
     .footer_div_2 div div {
         justify-content: space-around !important;
     }
