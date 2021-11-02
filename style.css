@@ -1000,7 +1000,8 @@ h5 {
 
     /* ======================= LOG IN ======================= */
 
-    .container_login{
+    .container_login,
+    .container_register{
         width: 100vw;
         height: fit-content;
         margin: 0;
