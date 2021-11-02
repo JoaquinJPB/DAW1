@@ -32,7 +32,7 @@
             <a href="about.html">
                 <li>About</li>
             </a>
-            <a href="login.html">
+            <a data-toggle="modal" href="#loginModal" id="botonModalLogin">
                 <li>Log In</li>
             </a>
             <a href="signup.html">
@@ -43,6 +43,21 @@
             </a>
         </ul>
     </nav>
+
+    <section class="modal container-fluid container_login" id="loginModal">
+        <form id='loginForm' class="form_login" name="loginForm" method='post'>
+            <i class='bx bx-user-circle login_icon'></i>
+            <div class="social_media">
+                <button class="google sign-in"><i class='bx bxl-google'></i>Sign in with Google</button>
+                <button class="facebook sign-in"><i class='bx bxl-facebook-circle'></i>Sign in with Facebook</button>
+                <button class="apple sign-in"> Sign in with Apple</button>
+                <input type="text" id="username" class="input_login" name="username" placeholder="USERNAME" required value="">
+                <input type="password" id="password" class="input_login" name="password" placeholder="PASSWORD" required value="">
+                <input type="submit" class="button_login" value="LOGIN">
+                <p class="p_login">Forgot password?</p>
+            </div>
+        </form>
+    </section>
 
     <section class="container_home">
         <div class="container_search">
@@ -185,7 +200,7 @@
                 </div>
 
             </div>
-            
+
             <div class="swiper-button-prev">
                 <i class='bx bx-chevron-left swiper-icon'></i>
             </div>
@@ -199,7 +214,7 @@
     </section>
 
     <section>
-        
+
     </section>
 
     <footer>
@@ -237,7 +252,7 @@
                 <p>© 2021 Our Company. All rights reserved</p>
             </div>
         </div>
-        
+
 
     </footer>
 
@@ -247,6 +262,7 @@
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
     <script src="./js/swiper.js "></script>
+    <script src="./js/modal.js "></script>
 </body>
 
 </html>
