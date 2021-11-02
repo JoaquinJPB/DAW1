@@ -1,4 +1,17 @@
 $(function() {
+
+    initValidateLoginForm();
+    //initValidateSignUpForm();
+
+});
+
+
+function initValidateSignUpForm() {
+
+    //IGUAL AL METODO DE ABAJO PERO CON LOS CAMPOS CORRESPONDIENTES
+}
+
+function initValidateLoginForm() {
     //Tambien se puede con #loginForm
     $("form[name='loginForm']").validate({ //#register-form is form id
         rules: {
@@ -23,5 +36,4 @@ $(function() {
             form.submit();
         }
     });
-
-});
+}
