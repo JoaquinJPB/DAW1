@@ -19,7 +19,8 @@
         <a href="index.html"><img src="DAW1_resources/Logo_Web.png" alt="Logo_Web"></a>
         <div class="header_icons">
             <a href="profile.html"><i class='bx bx-user-circle header_icon'></i></a>
-            <i class='bx bx-cart-alt header_icon'></i>
+            <a href="#cart.html"><i class='bx bx-cart-alt header_icon'></i></a>
+            <a href="#wish.html"><i class='bx bx-heart header_icon'></i></a>
         </div>
     </header>
 
@@ -78,8 +79,8 @@
             </div>
             <div class="linea"></div>
         </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-3 col-xl-3 brand_popular">
+        <div class="d-flex flex-row justify-content-between w-100">
+            <div class="col-sm-6 col-md-3 col-xl-3 brand_popular h-100">
                 <img class="img-fluid" src="./DAW1_resources/clothing_nike.png" alt="clothing_nike">
             </div>
 
@@ -87,11 +88,11 @@
                 <img class="img-fluid" src="./DAW1_resources/clothing_adidas.png" alt="clothing_adidas">
             </div>
 
-            <div class="col-sm-6 col-md-3 col-xl-3 brand_popular">
+            <div class="col-sm-6 col-md-3 col-xl-3 brand_popular align-self-center">
                 <img class="img-fluid" src="./DAW1_resources/sneakers_jordan1.png" alt="sneakers_jordan1">
             </div>
 
-            <div class="col-sm-6 col-md-3 col-xl-3 brand_popular">
+            <div class="col-sm-6 col-md-3 col-xl-3 brand_popular align-self-center">
                 <img class="img-fluid" src="./DAW1_resources/sneakers_newbalance.png" alt="sneakers_newbalance">
             </div>
         </div>
@@ -151,11 +152,11 @@
 
 
         <!-- Slider main container -->
-        <div class="swiper mySwiper d-flex align-center justify-content-center">
+        <div class="swiper mySwiper d-flex align-center justify-content-center position-relative">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper px-2">
+            <div class="swiper-wrapper px-2 w-100">
                 <!-- Slides -->
-                <div class="swiper-slide">
+                <div class="swiper-slide align-self-center">
                     <div class="tarjeta_producto">
                         <img class="img-fluid" src="./DAW1_resources/newbalance_grey.png" alt="newbalance_grey">
                         <div class="">
@@ -165,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide align-self-center">
                     <div class="tarjeta_producto">
                         <img class="img-fluid" src="./DAW1_resources/blue_jordan.png" alt="blue_jordan">
                         <div class="">
@@ -175,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide align-self-center">
                     <div class="tarjeta_producto">
                         <img class="img-fluid" src="./DAW1_resources/yeezy.png" alt="yeezy">
                         <div class="">
@@ -185,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide align-self-center">
                     <div class="tarjeta_producto">
                         <img class="img-fluid" src="./DAW1_resources/air_force_one.png" alt="air_force_one">
                         <div class="">
@@ -197,8 +198,8 @@
                 </div>
 
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev position-absolute"></div>
+            <div class="swiper-button-next position-absolute ri"></div>
             <!-- If we need navigation buttons -->
             <div class="swiper-pagination "></div>
 
@@ -208,7 +209,7 @@
 
     <footer>
 
-        <div class="row footer_div_father ">
+        <div class="row footer_div_father">
             <div class="col footer_div_1 ">
                 <img class="img-fluid " src="DAW1_resources/Logo_Web.png ">
                 <p>+34 920 46 78 98</p>
@@ -232,7 +233,7 @@
 
         <hr>
 
-        <div class="footer_down ">
+        <div class="footer_down">
             <div>
                 <i class='bx bxl-twitter footer_icon'></i>
                 <i class='bx bxl-facebook-square footer_icon'></i>
