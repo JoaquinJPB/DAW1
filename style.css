@@ -384,6 +384,7 @@ footer {
 
 .footer_div_2 h5 {
     padding-bottom: 2rem;
+    margin-left: 4.85rem;
 }
 
 .footer_div_2 span {
@@ -835,9 +836,10 @@ h5 {
     padding: 2rem;
 }
 
-.social_media{
+.social_media {
     margin: 1rem 0 0 1rem;
 }
+
 
 /* ======================= PROFILE ======================= */
 
@@ -971,13 +973,15 @@ h5 {
     margin-right: 1rem;
 }
 
+
 /* ======================= SWIPER CONFIGURATION ======================= */
+
 .swiper-button-prev:after,
-.swiper-button-next:after{
+.swiper-button-next:after {
     content: '';
 }
 
-.swiper-icon{
+.swiper-icon {
     font-size: 4rem;
     color: var(--first-color);
 }
@@ -1021,7 +1025,7 @@ a{
     margin-left: 5rem;
 }
 
-.nav-link{
+.nav-link-nav{
     font-size: 1.6rem;
     font-weight: 400;
     color: #475569;
@@ -1037,14 +1041,87 @@ a{
     color: #482ff7;
 }
 
+
 /* ======================= MEDIA QUERIES ======================= */
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 500px) {
     .header img{
         display: none;
     }
+    /* ==== PROFILE ==== */
+    .section_profile_right article {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .section_profile_right article div {
+        width: 75vw;
+    }
+    .section_profile_right article div:nth-child(2) {
+        margin-top: 2rem;
+    }
+    /* ==== FOOTER ==== */
+    footer hr {
+        display: none;
+    }
+    .footer_div_father {
+        width: 100%;
+        flex-direction: column;
+        padding-left: 2rem;
+    }
+    .footer_down {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_down div {
+        margin: 1rem 0 1rem 0;
+    }
+    .footer_div_2 {
+        margin-top: 2rem;
+    }
+    .footer_div_2 h5 {
+        text-align: center;
+    }
+    .footer_div_2 div div {
+        justify-content: space-around !important;
+    }
+    /* ======================= ABOUT US ======================= */
+    .div_about h1 {
+        margin: 1.5rem 1.5rem .75rem 1.5rem;
+        text-align: center;
+        font-size: medium;
+    }
+    .div_about h3 {
+        margin: .75rem 1.5rem 1.5rem 1.5rem;
+        text-align: center;
+        font-size: medium;
+    }
+    .about_description {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .about_description img {
+        margin: 2rem 1rem 1rem 1rem;
+        width: 70vw;
+    }
+    .images {
+        order: -1;
+    }
+    .about_desc_left {
+        text-align: center;
+        margin: 1rem 2rem 2rem 2rem;
+    }
+    .about_desc_right {
+        text-align: center;
+        margin: 1rem 2rem 1rem 2rem;
+    }
+    .about_desc_left h3,
+    .about_desc_right h3 {
+        font-size: large;
+    }
+}
 
+@media screen and (min-width: 300px) and (max-width: 768px) {
     .header{
         justify-content: flex-end;
     }
@@ -1100,210 +1177,260 @@ a{
     }
 
     /* ==== LOG IN ==== */
-
     .container_login,
-    .container_register{
+    .container_register {
         width: 100vw;
         margin: 0;
         border-radius: 0;
     }
-
     /* ==== SHOP STORE ==== */
-    
-    .section_shop_left{
+    .section_shop_left {
         display: none;
     }
-
-    .section_shop_right h1{
+    .section_shop_right h1 {
         text-align: center;
     }
-
-    .section_shop_right div{
+    .section_shop_right div {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .section_shop_right div div{
+    .section_shop_right div div {
         width: 50vw;
         height: fit-content;
     }
-
-     /* ==== PROFILE ==== */
-    .main_profile{
+    /* ==== PROFILE ==== */
+    .main_profile {
         flex-direction: column !important;
         align-items: center;
     }
-
-    .section_profile_left{
+    .section_profile_left {
         height: fit-content;
     }
-
-    .section_profile_left h2{
+    .section_profile_left h2 {
         margin-top: 2.5rem;
     }
-
-    .section_profile_left div{
+    .section_profile_left div {
         margin-top: 2rem;
     }
-
-    .section_profile_right{
+    .section_profile_right {
         margin: 2rem 0 2rem 0;
         height: fit-content;
     }
-
-    .section_profile_right article{
+    .section_profile_right article {
         justify-content: space-evenly;
         width: 100vw;
     }
-
-    .section_profile_right article div{
+    .section_profile_right article div {
         margin: 0;
         width: 45vw;
     }
-
-    .section_profile_right article div div{
+    .section_profile_right article div div {
         flex-direction: column;
     }
-
-    .section_profile_right h3{
+    .section_profile_right h3 {
         text-align: center;
         margin: 2rem 0 2rem 0 !important;
     }
-
     /* ==== FOOTER ==== */
-
-    footer hr{
+    footer hr {
         display: none;
     }
-    
-    .footer_div_father{
+    .footer_div_father {
         width: 100%;
         flex-direction: column;
         padding-left: 2rem;
     }
-
-    .footer_down{
+    .footer_down {
         flex-direction: column;
         align-items: center;
     }
-
     .footer_down div {
         margin: 1rem 0 1rem 0;
     }
-
     .footer_div_2 {
         margin-top: 2rem;
     }
-
-    .footer_div_2 h5{
+    .footer_div_2 h5 {
         text-align: center;
     }
-
     .footer_div_2 div div {
         justify-content: space-around !important;
     }
-}
-
-@media screen and (max-width: 500px){
-
-    /* ==== PROFILE ==== */
-    
-    .section_profile_right article{
-        flex-direction: column !important;
-        align-items: center;
+    /* ======================= ABOUT US ======================= */
+    .div_about h1 {
+        margin: 1.5rem 1.5rem .75rem 1.5rem;
+        text-align: center;
+        font-size: large;
     }
-    
-    .section_profile_right article div{
-        width: 75vw;
+    .div_about h3 {
+        margin: .75rem 1.5rem 1.5rem 1.5rem;
+        text-align: center;
+        font-size: large;
     }
-
-    .section_profile_right article div:nth-child(2){
-        margin-top: 2rem;
+    .about_description {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .about_description img {
+        margin: 2rem;
+        width: 70vw;
+    }
+    .images {
+        order: -1;
+    }
+    .about_desc_left {
+        text-align: center;
+        margin: 2rem;
+    }
+    .about_desc_right {
+        text-align: center;
+        margin: 2rem;
+    }
+    .about_desc_left h3,
+    .about_desc_right h3 {
+        font-size: large;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 996px) {
+    .header {
+        display: none;
+    }
     
     .section_profile_left div{
         margin-top: 5.5rem;
     }
 
-    .section_profile_right{
+    .section_profile_right {
         justify-content: space-around;
     }
 
-    .section_profile_right h3:nth-child(1){
+    .section_profile_right h3:nth-child(1) {
         margin: 0;
     }
 
-    .section_profile_right h3:nth-child(3){
+    .section_profile_right h3:nth-child(3) {
         margin-top: 0;
     }
 
-    .section_profile_right h3{
+    .section_profile_right h3 {
         text-align: center;
     }
 
-    .section_profile_right article{
+    .section_profile_right article {
         flex-direction: column;
         width: fit-content;
         height: 90vh;
     }
 
-    .section_profile_right article div{
+    .section_profile_right article div {
         margin: 0;
         width: 65vw;
         height: fit-content;
     }
 
-    .section_profile_right article:nth-child(4){
+    .section_profile_right article:nth-child(4) {
         margin: 0;
         width: fit-content;
         height: 100vh;
     }
 
-    .section_profile_right article div>div{
+    .section_profile_right article div>div {
         flex-direction: column;
+    }
+    /* ==== FOOTER ==== */
+    footer hr {
+        display: none;
+    }
+    .footer_div_father {
+        width: 100%;
+        flex-direction: column;
+        padding-left: 2rem;
+    }
+    .footer_down {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_down div {
+        margin: 1rem 0 1rem 0;
+    }
+    .footer_div_2 {
+        margin-top: 2rem;
+    }
+    .footer_div_2 h5 {
+        text-align: center;
+    }
+    .footer_div_2 div div {
+        justify-content: space-around !important;
+    }
+    /* ======================= ABOUT US ======================= */
+    .div_about h1 {
+        margin: 2rem 2rem 1rem 2rem;
+        text-align: center;
+        font-size: x-large;
+    }
+    .div_about h3 {
+        margin: 1rem 2rem 2rem 2rem;
+        text-align: center;
+        font-size: x-large;
+    }
+    .about_description {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .about_description img {
+        margin: 2rem;
+        width: 70vw;
+    }
+    .images {
+        order: -1;
+    }
+    .about_desc_left {
+        text-align: center;
+        margin: 2rem;
+    }
+    .about_desc_right {
+        text-align: center;
+        margin: 2rem;
+    }
+    .about_desc_left h3,
+    .about_desc_right h3 {
+        font-size: x-large;
     }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1200px){
-    .section_profile_right{
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+    .section_profile_right {
         justify-content: space-around;
     }
-
-    .section_profile_right h3:nth-child(1){
+    .section_profile_right h3:nth-child(1) {
         margin: 0;
     }
-
-    .section_profile_right h3:nth-child(3){
+    .section_profile_right h3:nth-child(3) {
         margin-top: 0;
     }
-
-    .section_profile_right h3{
+    .section_profile_right h3 {
         text-align: center;
     }
-
-    .section_profile_right article{
+    .section_profile_right article {
         flex-direction: column;
         width: fit-content;
         height: 65vh;
     }
-
-    .section_profile_right article div{
+    .section_profile_right article div {
         margin: 0;
         width: 65vw;
         height: fit-content;
     }
-
-    .section_profile_right article:nth-child(4){
+    .section_profile_right article:nth-child(4) {
         margin: 0;
         width: fit-content;
         height: 75vh;
     }
-
-    .section_profile_right article div>div{
+    .section_profile_right article div>div {
         flex-direction: column;
     }
 }
