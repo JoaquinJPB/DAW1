@@ -15,7 +15,31 @@
 <body>
 
     <header class="header">
-        <a href="index.html"><img src="DAW1_resources/Logo_Web.png" alt="Logo_Web"></a>
+        <nav class="navbar">
+            <a href="index.html"><img src="DAW1_resources/Logo_Web.png" alt="Logo_Web"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link-nav">
+                        <i class='bx bxs-home nav_icon'><span>HOME</span></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link-nav">
+                        <i class='bx bx-info-circle nav_icon'><span>ABOUT</span></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link-nav">
+                        <i class='bx bxs-store nav_icon'><span>STORE</span></i> 
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
 
     <section class="container-fluid container_register">
@@ -79,6 +103,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
 
     <script src="./js/validation-form.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
