@@ -384,6 +384,7 @@ footer {
 
 .footer_div_2 h5 {
     padding-bottom: 2rem;
+    margin-left: 4.85rem;
 }
 
 .footer_div_2 span {
@@ -1024,7 +1025,7 @@ a{
     margin-left: 5rem;
 }
 
-.nav-link{
+.nav-link-nav{
     font-size: 1.6rem;
     font-weight: 400;
     color: #475569;
@@ -1120,10 +1121,7 @@ a{
     }
 }
 
-@media screen and (min-width: 500px) and (max-width: 768px) {
-    .header {
-        display: none;
-    }
+@media screen and (min-width: 300px) and (max-width: 768px) {
     .header{
         justify-content: flex-end;
     }
@@ -1338,7 +1336,7 @@ a{
         width: fit-content;
         height: 100vh;
     }
-    
+
     .section_profile_right article div>div {
         flex-direction: column;
     }
