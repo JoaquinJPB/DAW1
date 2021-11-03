@@ -11,27 +11,38 @@ function initValidateSignUpForm() {
         rules: {
             complete_name: "required",
             email: {
-
+                required: true,
+                email: true
             },
-            phone: {
-
-            },
+            tel: "required",
             password: {
-
+                required: true,
+                minlength: 8
             },
             confirm_password: {
-                equalTo: "#password",
-            },
+                required: true,
+                minlength: 8,
+                equalTo: '#password'
+            }
         },
         // Mensajes de errores
         messages: {
             complete_name: "Enter Username",
-            password: "Enter Passowrd",
+            email: 'Please enter a valid Email Address',
+            password: {
+                required: 'Please provide a Password',
+                minlength: 'Your Password must be at least 8 characters long'
+            },
+            confirm_password: {
+                required: 'Please provide a Password',
+                minlength: 'Your Password must be at least 8 characters long',
+                equalTo: 'Please enter the same Password as above'
+            }
         },
         submitHandler: function(form) {
             form.submit();
         }
-    });
+    });   
 }
 
 function initValidateLoginForm() {
