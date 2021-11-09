@@ -114,6 +114,15 @@ a:active {
     background-color: hsl(var(--hue-color), 100%, 69%);
 }
 
+.nav_responsive {
+    display: none;
+    width: 15vw;
+    height: 100vh;
+    text-align: center;
+    background-color: red;
+    position: absolute;
+}
+
 #browse {
     background-color: #787171;
 }
@@ -123,10 +132,10 @@ a:active {
 }
 
 .container_home {
-    background-image: url(./DAW1_resources/images/bg2-web.png);
+    background-image: url(../DAW1_resources/images/bg2-web.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: 100vw 100vh;
     height: calc(100vh - 120px);
 }
 
@@ -248,14 +257,14 @@ a:active {
 }
 
 .col_women {
-    background-image: url(./DAW1_resources/shopwomen.png);
+    background-image: url(../DAW1_resources/shopwomen.png);
     background-size: cover;
     width: 100vw;
     height: 100vh;
 }
 
 .col_men {
-    background-image: url(./DAW1_resources/shopmen.jpeg);
+    background-image: url(../DAW1_resources/shopmen.jpeg);
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -451,7 +460,7 @@ hr {
 
 .div_about {
     width: 100vw;
-    background-image: url(./DAW1_resources/images/sneakers.jpeg);
+    background-image: url(../DAW1_resources/images/sneakers.jpeg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -1043,21 +1052,45 @@ a {
 /* ======================= MEDIA QUERIES ======================= */
 
 @media screen and (max-width: 500px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
     .header img {
-        display: none;
+        /* display: none; */
+        height: 10vh;
+        margin: .25rem 0 .25rem 0;
     }
     /* ==== INDEX ==== */
     .form_search {
         display: none;
     }
+    .nav_home {
+        display: none;
+    }
+    .container_home {
+        background-image: url(../DAW1_resources/images/bg2-web.png);
+        background-size: 100vw auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
     .linea {
         display: none;
+    }
+    .container_products {
+        padding: 0;
     }
     .div_titulo {
         justify-content: center !important;
     }
     .popular_brands {
         flex-direction: column !important;
+        align-items: center !important;
+    }
+    .brand_popular {
+        text-align: center;
     }
     .brand_popular img {
         width: 50vw;
@@ -1065,6 +1098,17 @@ a {
     .container_products .titulo h2 {
         text-align: center;
         font-size: var(--h1-font-size);
+    }
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tarjeta_producto {
+        width: 70vw;
+    }
+    .tarjeta_producto img {
+        width: 60vw;
     }
     /* ==== PROFILE ==== */
     .section_profile_right article {
@@ -1402,7 +1446,7 @@ a {
     }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
+@media screen and (min-width: 1000px) {
     .section_profile_right {
         justify-content: space-around;
     }

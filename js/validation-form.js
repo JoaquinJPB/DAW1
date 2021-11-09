@@ -5,7 +5,6 @@ $(function() {
 
 });
 
-
 function initValidateSignUpForm() {
     $("#singUpForm").validate({ //#register-form is form id
         rules: {
@@ -42,7 +41,7 @@ function initValidateSignUpForm() {
         submitHandler: function(form) {
             form.submit();
         }
-    });   
+    });
 }
 
 function initValidateLoginForm() {
