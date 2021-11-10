@@ -653,9 +653,9 @@ footer{
 }
 
 .shipping_data {
-    margin: 2rem 1rem 2rem 4rem;
+    margin: 1rem 20rem 1rem 20rem;
     padding: 2rem;
-    width: 50vw;
+    width: 100rem;
     height: fit-content;
     background-color: white;
 }
@@ -731,20 +731,18 @@ h5 {
     height: 20px;
 }
 
-
-/* ======================= REGISTER ======================= */
-
-.container_register {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background-color: hsl(355, 68%, 53%);
-    width: 40vw;
-    border-radius: 2rem;
-    padding: 2rem;
+#div{
+    display: flex;
+    flex-direction: row;
 }
-
-.social_media {
-    margin: 1rem 0 0 1rem;
+#div1{
+    margin: auto;
+    width: -webkit-fill-available;
+    margin-top: inherit;
+}
+#div2{
+    margin-top: inherit;
+    margin: auto;
 }
 
 
