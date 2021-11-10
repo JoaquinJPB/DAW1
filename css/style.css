@@ -84,45 +84,6 @@ a:active {
     transform: scale(.95);
 }
 
-.nav_shop {
-    height: auto;
-    background-color: #464141;
-    text-align: center;
-}
-
-.nav_shop ul {
-    list-style: none;
-    display: inline-block;
-    padding: 18px;
-}
-
-.nav_shop ul li {
-    float: left;
-    font-size: var(--h2-font-size);
-    margin-top: 20px;
-}
-
-.nav_shop ul li a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 50px;
-    padding: 18px;
-}
-
-.nav_shop ul li a:hover {
-    background-color: hsl(var(--hue-color), 100%, 69%);
-}
-
-.nav_responsive {
-    display: none;
-    width: 15vw;
-    height: 100vh;
-    text-align: center;
-    background-color: red;
-    position: absolute;
-}
-
 #browse {
     background-color: #787171;
 }
@@ -230,7 +191,6 @@ a:active {
     text-decoration: none;
 }
 
-
 /* ======================= WOMEN / MEN / SALES ======================= */
 
 .container_category {
@@ -276,15 +236,6 @@ a:active {
     height: 100vh;
 }
 
-.col_women,
-.col_men,
-.col_sales {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-}
-
 .title_sales {
     color: white;
     text-align: center;
@@ -295,7 +246,6 @@ a:active {
 .title_sales:first-child {
     margin-bottom: 3rem;
 }
-
 
 /* ======================= POPULAR BRANDS ======================= */
 
@@ -650,7 +600,7 @@ footer{
     margin-top: 2rem;
 }
 
-.tarjeta_producto {
+.product_card{
     box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.2);
     width: auto;
     height: 375px;
@@ -663,15 +613,15 @@ footer{
     height: 100%;
 }
 
-.tarjeta_producto h4 {
+.product_card h4 {
     margin-top: 1rem;
 }
 
-.tarjeta_producto h4:hover {
+.product_card h4:hover {
     font-weight: bold;
 }
 
-.tarjeta_producto h5:hover {
+.product_card h5:hover {
     font-weight: bolder;
     color: black;
 }
@@ -1081,10 +1031,10 @@ a {
         flex-direction: column;
         align-items: center;
     }
-    .tarjeta_producto {
+    .product_card {
         width: 70vw;
     }
-    .tarjeta_producto img {
+    .product_card img {
         width: 60vw;
     }
     /* ==== PROFILE ==== */
@@ -1232,11 +1182,6 @@ a {
     }
     .section_shop_right h1 {
         text-align: center;
-    }
-    .section_shop_right div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
     .section_shop_right div div {
         width: 50vw;
