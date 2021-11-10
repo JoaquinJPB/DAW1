@@ -15,11 +15,31 @@
 <body>
 
     <header class="header">
-        <a href="index.html"><img src="DAW1_resources/Logo_Web.png" alt="Logo_Web"></a>
-        <div class="header_icons">
-            <a href="profile.html"><i class='bx bx-user-circle header_icon'></i></a>
-            <i class='bx bx-cart-alt header_icon'></i>
-        </div>
+        <nav class="d-flex justify-content-between align-items-center p-1 w-100">
+            <a href="index.html"><img src="DAW1_resources/Logo_Web.png" alt="Logo_Web"></a>
+            <ul class="nav-menu d-flex justify-content-between align-items-center">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link-nav">
+                        <i class='bx bxs-home nav_icon'><span>HOME</span></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link-nav">
+                        <i class='bx bx-info-circle nav_icon'><span>ABOUT</span></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link-nav">
+                        <i class='bx bxs-store nav_icon'><span>STORE</span></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger d-none">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
 
 
