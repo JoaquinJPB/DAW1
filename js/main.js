@@ -1,23 +1,23 @@
-$(function() {
+// $(function() {
 
-    $("#nav_responsive").hide();
-    initMenuResponsive();
-    let hamburger = $(".hamburger");
-    let navMenu = $(".nav-menu");
-    let navLink = $(".nav-link");
+//     $("#nav_responsive").hide();
+//     initMenuResponsive();
+//     let hamburger = $(".hamburger");
+//     let navMenu = $(".nav-menu");
+//     let navLink = $(".nav-link");
 
-    hamburger.click(mobileMenu);
-    navLink.each(function() {
-        $(this).click(closeMenu);
-    });
-});
+//     hamburger.click(mobileMenu);
+//     navLink.each(function() {
+//         $(this).click(closeMenu);
+//     });
+// });
 
-// const hamburger = document.querySelector(".hamburger");
-// const navMenu = document.querySelector(".nav-menu");
-// const navLink = document.querySelectorAll(".nav-link");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
 
-// hamburger.addEventListener("click", mobileMenu);
-// navLink.forEach(n => n.addEventListener("click", closeMenu));
+hamburger.addEventListener("click", mobileMenu);
+navLink.forEach(n => n.addEventListener("click", closeMenu));
 
 function mobileMenu() {
     hamburger.classList.toggle("active");
