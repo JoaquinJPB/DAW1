@@ -9,14 +9,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Sneaker WEB DAW1</title>
 </head>
 
 <body>
 
     <header class="header">
+        <div class="ml-3"><a href="#"><i class="fas fa-bars" id="hamburger"></i></a></div>
         <a href="index.html"><img src="DAW1_resources/Logo_Web.png" alt="Logo_Web"></a>
+        <div class="mr-3">
+            <a href="index.html" class="mr-2"><i class="fas fa-home"></i></a>
+            <a href=""><i class="fas fa-search"></i></a>
+        </div>
     </header>
 
     <nav class="nav_home">
@@ -36,6 +41,38 @@
             <a href="#help.html">
                 <li>Help</li>
             </a>
+        </ul>
+    </nav>
+    <nav class="nav_responsive" id="nav_responsive">
+        <ul>
+            <li>
+                <a href="shop.html">
+                    Shop
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="./login.html">
+                    Log In
+                </a>
+            </li>
+            <li>
+                <a href="signup.html">
+                    Sign In
+                </a>
+            </li>
+            <li>
+                <a href="#help.html">
+                    Help
+                </a>
+            </li>
+            <li>
+                <i class="fas fa-times" id="nav_close"></i>
+            </li>
         </ul>
     </nav>
 
@@ -68,123 +105,88 @@
     </section>
 
     <section class="container-fluid container_products">
-        <div class="d-flex justify-content-center align-items-center div_titulo">
+        <div class="div_titulo d-flex flex-row justify-content-between align-items-center">
             <div class="titulo">
                 <h2>Popular Brands</h2>
             </div>
-            <div class="linea"></div>
+            <div class="linea "></div>
         </div>
-        <div class="d-flex flex-row justify-content-between w-100">
-            <div class="col-sm-6 col-md-3 col-xl-3 brand_popular h-100">
-                <img class="img-fluid" src="./DAW1_resources/clothing_nike.png" alt="clothing_nike">
+        <div class="popular_brands d-flex flex-row justify-content-between w-100 ">
+            <div class="col-sm-12 col-md-3 col-xl-3 brand_popular h-100 ">
+                <img class="img-fluid " src="./DAW1_resources/clothing_nike.png " alt="clothing_nike ">
             </div>
 
-            <div class="col-sm-6 col-md-3 col-xl-3 brand_popular">
-                <img class="img-fluid" src="./DAW1_resources/clothing_adidas.png" alt="clothing_adidas">
+            <div class="col-sm-6 col-md-3 col-xl-3 brand_popular ">
+                <img class="img-fluid " src="./DAW1_resources/clothing_adidas.png " alt="clothing_adidas ">
             </div>
 
-            <div class="col-sm-6 col-md-3 col-xl-3 brand_popular align-self-center">
-                <img class="img-fluid" src="./DAW1_resources/sneakers_jordan1.png" alt="sneakers_jordan1">
+            <div class="col-sm-6 col-md-3 col-xl-3 brand_popular align-self-center ">
+                <img class="img-fluid " src="./DAW1_resources/sneakers_jordan1.png " alt="sneakers_jordan1 ">
             </div>
 
-            <div class="col-sm-6 col-md-3 col-xl-3 brand_popular align-self-center">
-                <img class="img-fluid" src="./DAW1_resources/sneakers_newbalance.png" alt="sneakers_newbalance">
+            <div class="col-sm-6 col-md-3 col-xl-3 brand_popular align-self-center ">
+                <img class="img-fluid " src="./DAW1_resources/sneakers_newbalance.png " alt="sneakers_newbalance ">
             </div>
         </div>
-        <div class="d-flex justify-content-center align-items-center div_titulo">
-            <div class="linea"></div>
-            <div class="titulo">
+        <div class="div_titulo d-flex flex-row justify-content-between align-items-center">
+            <div class="linea "></div>
+            <div class="titulo ">
                 <h2>Most Popular Sneakers</h2>
             </div>
         </div>
-        <!-- <div class="row">
-            <div class="col-sm-6 col-md-3 col-xl-3 columna">
-                <div class="tarjeta_producto">
-                    <img class="img-fluid" src="./DAW1_resources/air_force_one.png" alt="air_force_one">
-                    <div class="">
-                        <h3 class="item_title">Nike Air Force 1 Low</h3>
-                        <h4 class="item_subtitle">White '07</h4>
-                        <h3 class="item_price">89€</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3 col-xl-3">
-                <div class="tarjeta_producto">
-                    <img class="img-fluid" src="./DAW1_resources/yeezy.png" alt="yeezy">
-                    <div class="">
-                        <h3 class="item_title">Adidas Yeezy Boost 700 Wave Runner</h3>
-                        <h4 class="item_subtitle">Solid Grey</h4>
-                        <h3 class="item_price">359€</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3 col-xl-3">
-                <div class="tarjeta_producto">
-                    <img class="img-fluid" src="./DAW1_resources/blue_jordan.png" alt="blue_jordan">
-                    <div class="">
-                        <h3 class="item_title">Jordan 1 Retro High OG</h3>
-                        <h4 class="item_subtitle">White University Blue Black</h4>
-                        <h3 class="item_price">357€</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3 col-xl-3">
-                <div class="tarjeta_producto">
-                    <img class="img-fluid" src="./DAW1_resources/newbalance_grey.png" alt="newbalance_grey">
-                    <div class="">
-                        <h3 class="item_title">New Balance 992</h3>
-                        <h4 class="item_subtitle">Grey</h4>
-                        <h3 class="item_price">200€</h3>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 
         <!-- Slider main container -->
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper ">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper ">
                 <!-- Slides -->
-                <div class="swiper-slide align-self-center">
-                    <div class="tarjeta_producto">
-                        <img class="img-fluid" src="./DAW1_resources/newbalance_grey.png" alt="newbalance_grey">
+                <div class="swiper-slide align-self-center ">
+                    <div class="tarjeta_producto ">
+                        <img class="img-fluid " src="./DAW1_resources/newbalance_grey.png " alt="newbalance_grey ">
                         <div>
-                            <h3 class="item_title">New Balance 992</h3>
-                            <h4 class="item_subtitle">Grey</h4>
+                            <h3 class="item_title ">New Balance 992</h3>
+                            <h4 class="item_subtitle ">Grey</h4>
                         </div>
-                        <h3 class="item_price">200€</h3>
+                        <h3 class="item_price ">200€</h3>
                     </div>
                 </div>
-                <div class="swiper-slide align-self-center">
-                    <div class="tarjeta_producto">
-                        <img class="img-fluid" src="./DAW1_resources/yeezy.png" alt="yeezy">
+                <div class="swiper-slide align-self-center ">
+                    <div class="tarjeta_producto ">
+                        <img class="img-fluid " src="./DAW1_resources/yeezy.png " alt="yeezy ">
                         <div>
-                            <h3 class="item_title">Adidas Yeezy Boost 700 Wave Runner</h3>
-                            <h4 class="item_subtitle">Solid Grey</h4>
+                            <h3 class="item_title ">Adidas Yeezy Boost 700 Wave Runner</h3>
+                            <h4 class="item_subtitle ">Solid Grey</h4>
                         </div>
-                        <h3 class="item_price">359€</h3>
+                        <h3 class="item_price ">359€</h3>
                     </div>
                 </div>
-                <div class="swiper-slide align-self-center">
-                    <div class="tarjeta_producto">
-                        <img class="img-fluid" src="./DAW1_resources/air_force_one.png" alt="air_force_one">
+                <div class="swiper-slide align-self-center ">
+                    <div class="tarjeta_producto ">
+                        <img class="img-fluid " src="./DAW1_resources/air_force_one.png " alt="air_force_one ">
                         <div>
-                            <h3 class="item_title">Nike Air Force 1 Low</h3>
-                            <h4 class="item_subtitle">White '07</h4>
+                            <h3 class="item_title ">Nike Air Force 1 Low</h3>
+                            <h4 class="item_subtitle ">White '07</h4>
                         </div>
-                        <h3 class="item_price">89€</h3>
+                        <h3 class="item_price ">89€</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide align-self-center ">
+                    <div class="tarjeta_producto ">
+                        <img class="img-fluid " src="./DAW1_resources/air_force_one.png " alt="air_force_one ">
+                        <div>
+                            <h3 class="item_title ">Nike Air Force 1 Low</h3>
+                            <h4 class="item_subtitle ">White '07</h4>
+                        </div>
+                        <h3 class="item_price ">89€</h3>
                     </div>
                 </div>
 
             </div>
 
-            <div class="swiper-button-prev">
+            <div class="swiper-button-prev ">
                 <i class='bx bx-chevron-left swiper-icon'></i>
             </div>
-            <div class="swiper-button-next">
+            <div class="swiper-button-next ">
                 <i class='bx bx-chevron-right swiper-icon'></i>
             </div>
             <div class="swiper-pagination "></div>
@@ -199,7 +201,7 @@
 
     <footer>
 
-        <div class="row footer_div_father">
+        <div class="row footer_div_father ">
             <div class="col footer_div_1 ">
                 <p>+34 920 46 78 98</p>
                 <p>support@ourcompany.es</p>
@@ -222,7 +224,7 @@
 
         <hr>
 
-        <div class="footer_down">
+        <div class="footer_down ">
             <div>
                 <i class='bx bxl-twitter footer_icon'></i>
                 <i class='bx bxl-facebook-square footer_icon'></i>
@@ -242,7 +244,7 @@
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
     <script src="./js/swiper.js "></script>
-    <script src="./js/modal.js "></script>
+    <script src="./js/main.js "></script>
 </body>
 
 </html>
