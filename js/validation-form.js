@@ -1,8 +1,6 @@
 $(function() {
-
     initValidateLoginForm();
     initValidateSignUpForm();
-
 });
 
 function initValidateSignUpForm() {
@@ -41,7 +39,7 @@ function initValidateSignUpForm() {
         submitHandler: function(form) {
             form.submit();
         }
-    });
+    });   
 }
 
 function initValidateLoginForm() {
@@ -59,6 +57,36 @@ function initValidateLoginForm() {
             username: "Enter Username",
             password: "Enter Passowrd",
             // email: "Enter Valid Email ID"
+        },
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+}
+function initValidatePayment(){
+    $("#shippingForm").validate({ //#register-form is form id
+        rules: {
+            name: "required",
+            address:"required",
+            postal:"required",
+            town:"required",
+            province:"required",
+            phone:{
+                required: true,
+                minlength: 8
+            }
+        },
+        // Mensajes de errores
+        messages: {
+            name: "Enter Username",
+            address:"Enter Address",
+            postal:"Enter Postal Code",
+            town:"Enter Town",
+            province:"Enter Province",
+            phone:{
+                required: 'Enter Phone',
+                minlength: 'Your phone must be at least 8 characters long',
+            }
         },
         submitHandler: function(form) {
             form.submit();
