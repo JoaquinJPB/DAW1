@@ -3,7 +3,6 @@ $(function() {
     initValidateSignUpForm();
 });
 
-
 function initValidateSignUpForm() {
     $("#singUpForm").validate({ //#register-form is form id
         rules: {

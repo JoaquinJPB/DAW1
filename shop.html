@@ -8,18 +8,38 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Shop Sneakers4Sure</title>
 </head>
 
 <body>
 
     <header class="header">
-        <a href="index.html"><img src="DAW1_resources/Logo_Web.png" alt="Logo_Web"></a>
-        <div class="header_icons">
-            <a href="profile.html"><i class='bx bx-user-circle header_icon'></i></a>
-            <i class='bx bx-cart-alt header_icon'></i>
-        </div>
+        <nav class="d-flex justify-content-between align-items-center p-1 w-100">
+            <a href="index.html"><img src="DAW1_resources/Logo_Web.png" alt="Logo_Web"></a>
+            <ul class="nav-menu d-flex justify-content-between align-items-center">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link-nav">
+                        <i class='bx bxs-home nav_icon'><span>HOME</span></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link-nav">
+                        <i class='bx bx-info-circle nav_icon'><span>ABOUT</span></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link-nav">
+                        <i class='bx bxs-store nav_icon'><span>STORE</span></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger d-none">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
 
 
@@ -67,11 +87,11 @@
 
         <section class="section_shop_right">
             <h1><span style="margin-left: 15px ;">NEW ARRIVALS</span></h1>
-            <div class="container-fluid">
+            <div class="container-fluid d-flex flex-column align-items-center">
                 <div class="row">
-                    <a href="./product.html" class="col-lg-3">
+                    <a href="./product.html" class="col-lg-3 col-sm-6 col-md-3">
                         <div>
-                            <div class="tarjeta_producto">
+                            <div class="product_card">
                                 <img class="img-fluid shop_item" src="DAW1_resources/Rectangle 25-1.png">
                                 <h4>Jordan Delta 2</h4>
                                 <h5>190€</h5>
@@ -80,7 +100,7 @@
                         </div>
                     </a>
                     <div class="col-lg-3">
-                        <div class="tarjeta_producto">
+                        <div class="product_card">
                             <img class="img-fluid shop_item" src="DAW1_resources/Rectangle 24.png">
                             <h4>Nike Air Jordan XT</h4>
                             <h5>180€</h5>
@@ -88,7 +108,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="tarjeta_producto">
+                        <div class="product_card">
                             <img class="img-fluid shop_item" src="DAW1_resources/Rectangle 26.png">
                             <h4>RX-X-INTL Game</h4>
                             <h5>99€</h5>
@@ -96,7 +116,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="tarjeta_producto">
+                        <div class="product_card">
                             <img class="img-fluid shop_item" src="DAW1_resources/Rectangle 26.png">
                             <h4>RX-X-INTL Game</h4>
                             <h5>99€</h5>
@@ -106,7 +126,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-3">
-                        <div class="tarjeta_producto">
+                        <div class="product_card">
                             <img class="img-fluid shop_item" src="DAW1_resources/Rectangle 29.png">
                             <h4>Suede Classic</h4>
                             <h5>69€</h5>
@@ -114,7 +134,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="tarjeta_producto">
+                        <div class="product_card">
                             <img class="img-fluid shop_item" src="DAW1_resources/Rectangle 36.png">
                             <h4>NMD 1 Refined</h4>
                             <h5>120€</h5>
@@ -122,7 +142,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="tarjeta_producto">
+                        <div class="product_card">
                             <img class="img-fluid shop_item" src="DAW1_resources/Rectangle 38.png">
                             <h4>Superstar Classic</h4>
                             <h5>135€</h5>
@@ -130,7 +150,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="tarjeta_producto">
+                        <div class="product_card">
                             <img class="img-fluid shop_item" src="DAW1_resources/Rectangle 38.png">
                             <h4>Superstar Classic</h4>
                             <h5>135€</h5>
@@ -140,7 +160,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-3">
-                        <div class="tarjeta_producto">
+                        <div class="product_card">
                             <img class="img-fluid shop_item" src="DAW1_resources/Rectangle 25.png">
                             <h4>Nike Zoom V3</h4>
                             <h5>210€</h5>
@@ -148,7 +168,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="tarjeta_producto">
+                        <div class="product_card">
                             <img class="img-fluid shop_item" src="DAW1_resources/Rectangle 48.png">
                             <h4>Air Jordan 4 x UNION LA</h4>
                             <h5>439€</h5>
@@ -156,7 +176,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="tarjeta_producto">
+                        <div class="product_card">
                             <img class="img-fluid shop_item" src="DAW1_resources/Rectangle 50.png">
                             <h4>Nike Air Max 270 React</h4>
                             <h5>395€</h5>
@@ -164,7 +184,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="tarjeta_producto">
+                        <div class="product_card">
                             <img class="img-fluid shop_item" src="DAW1_resources/Rectangle 50.png">
                             <h4>Nike Air Max 270 React</h4>
                             <h5>395€</h5>
@@ -180,42 +200,41 @@
 
     <footer>
 
-        <div class="row footer_div_father">
-            <div class="col footer_div_1">
+        <div class="footer_div_father d-flex flex-row align-items-center pt-5">
+
+            <div class="col d-flex flex-column justify-content-center align-items-center">
                 <p>+34 920 46 78 98</p>
                 <p>support@ourcompany.es</p>
             </div>
 
-            <div class="col footer_div_2">
-                <h5>Quick Links</h5>
-                <div class="nav flex-column">
+            <div class="col d-flex flex-column align-items-center">
+                <h5 class="mb-3 text-center w-75">Quick Links</h5>
+                <div class="nav flex-column w-75">
                     <div class="d-flex flex-row justify-content-between">
-                        <span class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Product</a></span>
-                        <span class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></span>
+                        <span class="mb-1"><a href="#" class="nav-link p-0 text-muted">Product</a></span>
+                        <span class="mb-1"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></span>
                     </div>
                     <div class="d-flex flex-row flex-row justify-content-between">
-                        <span class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Company</a></span>
-                        <span class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms and Conditions</a></span>
+                        <span class="mb-1"><a href="#" class="nav-link p-0 text-muted">Company</a></span>
+                        <span class="mb-1"><a href="#" class="nav-link p-0 text-muted">Terms and Conditions</a></span>
                     </div>
                 </div>
             </div>
+
         </div>
 
-        <hr>
-
-        <div class="footer_down">
-            <div>
+        <div class="footer_down d-flex flex-row justify-content-around align-items-center">
+            <div class="mb-4">
                 <i class='bx bxl-twitter footer_icon'></i>
                 <i class='bx bxl-facebook-square footer_icon'></i>
                 <i class='bx bxl-instagram footer_icon'></i>
             </div>
-            <div>
+            <div class="mb-4 mt-4">
                 <p>© 2021 Our Company. All rights reserved</p>
             </div>
         </div>
 
     </footer>
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>

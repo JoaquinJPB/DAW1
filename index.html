@@ -9,14 +9,38 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Sneaker WEB DAW1</title>
 </head>
 
 <body>
 
     <header class="header">
-        <a href="index.html"><img src="DAW1_resources/Logo_Web.png" alt="Logo_Web"></a>
+        <nav class="d-flex justify-content-between align-items-center p-1 w-100">
+            <a href="index.html"><img src="DAW1_resources/Logo_Web.png" alt="Logo_Web"></a>
+            <ul class="nav-menu d-flex justify-content-between align-items-center">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link-nav">
+                        <i class='bx bxs-home nav_icon'><span>HOME</span></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link-nav">
+                        <i class='bx bx-info-circle nav_icon'><span>ABOUT</span></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link-nav">
+                        <i class='bx bxs-store nav_icon'><span>STORE</span></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger d-none">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
 
     <nav class="nav_home">
@@ -51,15 +75,15 @@
 
     <section class="container-fluid container_category">
         <div class="row">
-            <div class="col-12 col-md-auto col-xl-4 col_women">
+            <div class="d-flex flex-column align-items-center justify-content-end col-12 col-md-auto col-xl-4 col_women">
                 <button type="button" class="button_category">WOMEN</button>
             </div>
 
-            <div class="col-12 col-md-auto col-xl-4 col_men">
+            <div class="d-flex flex-column align-items-center justify-content-end col-12 col-md-auto col-xl-4 col_men">
                 <button type="button" class="button_category">MEN</button>
             </div>
 
-            <div class="col-12 col-md-auto col-xl-4 col_sales">
+            <div class="d-flex flex-column align-items-center justify-content-end col-12 col-md-auto col-xl-4 col_sales">
                 <h1 class="title_sales">FALL 2021 SALE</h1>
                 <h1 class="title_sales">UP TO 60 OFF</h1>
                 <button type="button" class="button_category">SALES</button>
@@ -75,7 +99,7 @@
             <div class="linea "></div>
         </div>
         <div class="popular_brands d-flex flex-row justify-content-between w-100 ">
-            <div class="col-sm-12 col-md-3 col-xl-3 brand_popular h-100 ">
+            <div class="col-md-3 col-xl-3 brand_popular h-100 ">
                 <img class="img-fluid " src="./DAW1_resources/clothing_nike.png " alt="clothing_nike ">
             </div>
 
@@ -97,51 +121,6 @@
                 <h2>Most Popular Sneakers</h2>
             </div>
         </div>
-        <!-- <div class="row ">
-            <div class="col-sm-6 col-md-3 col-xl-3 columna ">
-                <div class="tarjeta_producto ">
-                    <img class="img-fluid " src="./DAW1_resources/air_force_one.png " alt="air_force_one ">
-                    <div class=" ">
-                        <h3 class="item_title ">Nike Air Force 1 Low</h3>
-                        <h4 class="item_subtitle ">White '07</h4>
-                        <h3 class="item_price ">89€</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3 col-xl-3 ">
-                <div class="tarjeta_producto ">
-                    <img class="img-fluid " src="./DAW1_resources/yeezy.png " alt="yeezy ">
-                    <div class=" ">
-                        <h3 class="item_title ">Adidas Yeezy Boost 700 Wave Runner</h3>
-                        <h4 class="item_subtitle ">Solid Grey</h4>
-                        <h3 class="item_price ">359€</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3 col-xl-3 ">
-                <div class="tarjeta_producto ">
-                    <img class="img-fluid " src="./DAW1_resources/blue_jordan.png " alt="blue_jordan ">
-                    <div class=" ">
-                        <h3 class="item_title ">Jordan 1 Retro High OG</h3>
-                        <h4 class="item_subtitle ">White University Blue Black</h4>
-                        <h3 class="item_price ">357€</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-3 col-xl-3 ">
-                <div class="tarjeta_producto ">
-                    <img class="img-fluid " src="./DAW1_resources/newbalance_grey.png " alt="newbalance_grey ">
-                    <div class=" ">
-                        <h3 class="item_title ">New Balance 992</h3>
-                        <h4 class="item_subtitle ">Grey</h4>
-                        <h3 class="item_price ">200€</h3>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 
         <!-- Slider main container -->
         <div class="swiper mySwiper ">
@@ -149,7 +128,7 @@
             <div class="swiper-wrapper ">
                 <!-- Slides -->
                 <div class="swiper-slide align-self-center ">
-                    <div class="tarjeta_producto ">
+                    <div class="product_card ">
                         <img class="img-fluid " src="./DAW1_resources/newbalance_grey.png " alt="newbalance_grey ">
                         <div>
                             <h3 class="item_title ">New Balance 992</h3>
@@ -159,7 +138,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide align-self-center ">
-                    <div class="tarjeta_producto ">
+                    <div class="product_card ">
                         <img class="img-fluid " src="./DAW1_resources/yeezy.png " alt="yeezy ">
                         <div>
                             <h3 class="item_title ">Adidas Yeezy Boost 700 Wave Runner</h3>
@@ -169,7 +148,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide align-self-center ">
-                    <div class="tarjeta_producto ">
+                    <div class="product_card ">
                         <img class="img-fluid " src="./DAW1_resources/air_force_one.png " alt="air_force_one ">
                         <div>
                             <h3 class="item_title ">Nike Air Force 1 Low</h3>
@@ -179,7 +158,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide align-self-center ">
-                    <div class="tarjeta_producto ">
+                    <div class="product_card ">
                         <img class="img-fluid " src="./DAW1_resources/air_force_one.png " alt="air_force_one ">
                         <div>
                             <h3 class="item_title ">Nike Air Force 1 Low</h3>
@@ -209,40 +188,39 @@
 
     <footer>
 
-        <div class="row footer_div_father ">
-            <div class="col footer_div_1 ">
+        <div class="footer_div_father d-flex flex-row align-items-center pt-5">
+            
+            <div class="col d-flex flex-column justify-content-center align-items-center">
                 <p>+34 920 46 78 98</p>
                 <p>support@ourcompany.es</p>
             </div>
 
-            <div class="col footer_div_2 ">
-                <h5>Quick Links</h5>
-                <div class="nav flex-column ">
-                    <div class="d-flex flex-row justify-content-between ">
-                        <span class="nav-item mb-2 "><a href="# " class="nav-link p-0 text-muted ">Product</a></span>
-                        <span class="nav-item mb-2 "><a href="# " class="nav-link p-0 text-muted ">Contact Us</a></span>
+            <div class="col d-flex flex-column align-items-center">
+                <h5 class="mb-3 text-center w-75">Quick Links</h5>
+                <div class="nav flex-column w-75">
+                    <div class="d-flex flex-row justify-content-between">
+                        <span class="mb-1"><a href="#" class="nav-link p-0 text-muted">Product</a></span>
+                        <span class="mb-1"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></span>
                     </div>
-                    <div class="d-flex flex-row flex-row justify-content-between ">
-                        <span class="nav-item mb-2 "><a href="# " class="nav-link p-0 text-muted ">Company</a></span>
-                        <span class="nav-item mb-2 "><a href="# " class="nav-link p-0 text-muted ">Terms and Conditions</a></span>
+                    <div class="d-flex flex-row flex-row justify-content-between">
+                        <span class="mb-1"><a href="#" class="nav-link p-0 text-muted">Company</a></span>
+                        <span class="mb-1"><a href="#" class="nav-link p-0 text-muted">Terms and Conditions</a></span>
                     </div>
                 </div>
             </div>
+
         </div>
 
-        <hr>
-
-        <div class="footer_down ">
-            <div>
+        <div class="footer_down d-flex flex-row justify-content-around align-items-center">
+            <div class="mb-4">
                 <i class='bx bxl-twitter footer_icon'></i>
                 <i class='bx bxl-facebook-square footer_icon'></i>
                 <i class='bx bxl-instagram footer_icon'></i>
             </div>
-            <div>
+            <div class="mb-4 mt-4">
                 <p>© 2021 Our Company. All rights reserved</p>
             </div>
         </div>
-
 
     </footer>
 
@@ -252,7 +230,7 @@
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
     <script src="./js/swiper.js "></script>
-    <script src="./js/modal.js "></script>
+    <script src="./js/main.js "></script>
 </body>
 
 </html>
