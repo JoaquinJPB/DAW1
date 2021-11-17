@@ -45,54 +45,54 @@
 
         <section class="d-flex flex-column section_profile_left">
             <img class="img-fluid" src="./DAW1_resources/images/Profile/photo.png" alt="Profile Picture">
-            <button><span>Edit profile<i class='bx bxs-user-circle icon_profile'></i></span></button>
-            <h2>@PQuintana</h2>
-            <span><i class='bx bxs-map'></i>Aguadulce 22 2D</span>
-            <span><i class='bx bxs-group'></i>1,024 followers</span>
-            <div>
-                <button><span>Orders<i class='bx bxs-truck icon_profile'></i></button></span>
-                <button><span>Details<i class='bx bxs-envelope-open icon_profile'></i></button></span>
-                <button><span>Coupons<i class='bx bxs-discount icon_profile'></i></button></span>
+            <button class="mt-4"><span>Edit profile<i class='bx bxs-user-circle icon_profile'></i></span></button>
+            <h2 class="mt-3 text-center">@PQuintana</h2>
+            <span class="mt-4 d-flex flex-row justify-content-around align-items-center"><i class='bx bxs-map'></i>Aguadulce 22 2D</span>
+            <span class="mt-4 d-flex flex-row justify-content-around align-items-center"><i class='bx bxs-group'></i>1,024 followers</span>
+            <div class="d-flex flex-column justify-content-around mt-4 h-75">
+                <button><span class="d-flex flex-row justify-content-between">Orders<i class='bx bxs-truck icon_profile'></i></button></span>
+                <button><span class="d-flex flex-row justify-content-between">Details<i class='bx bxs-envelope-open icon_profile'></i></button></span>
+                <button><span class="d-flex flex-row justify-content-between">Coupons<i class='bx bxs-discount icon_profile'></i></button></span>
             </div>
         </section>
 
-        <section class="d-flex flex-column section_profile_right">
-            <h3>My Account</h3>
-            <article>
-                <div>
+        <section class="section_profile_right d-flex flex-column mt-5 mr-0 mb-5 ml-5">
+            <h3 class="mb-4">My Account</h3>
+            <article class="d-flex flex-row justify-content-around">
+                <div class="d-flex flex-column">
                     <h4>CONTACT INFORMATION</h4>
-                    <span>Pedro Quintana</span>
-                    <span>pquintana@gmail.com</span>
-                    <div>
-                        <button>EDIT</button>
-                        <button>CHANGE PASSWORD</button>
+                    <span class="mt-1 mb-1">Pedro Quintana</span>
+                    <span class="mt-1 mb-1">pquintana@gmail.com</span>
+                    <div class="d-flex flex-row justify-content-between w-100">
+                        <button class="mt-3 pt-1 pb-1 pl-4 pr-4">EDIT</button>
+                        <button class="mt-3">CHANGE PASSWORD</button>
                     </div>
                 </div>
-                <div>
+                <div class="d-flex flex-column">
                     <h4>MY PAYMENTS METHODS</h4>
-                    <span><img src="DAW1_resources/paypal.png" alt="Paypal">Pedro Quinata pquintana@gmail.com</span>
-                    <span><input type="checkbox">Set as default payment method</span>
+                    <span class="mt-3"><img class="mr-4" src="DAW1_resources/paypal.png" alt="Paypal">Pedro Quinata pquintana@gmail.com</span>
+                    <span class="mt-3"><input class="mr-4" type="checkbox">Set as default payment method</span>
                     <button>ADD PAYMENT METHOD</button>
                 </div>
             </article>
 
-            <h3>Address Information</h3>
+            <h3 class="mt-4 mb-4">Address Information</h3>
 
-            <article>
-                <div>
+            <article class="d-flex flex-row justify-content-around">
+                <div class="d-flex flex-column">
                     <h4>BILLING</h4>
-                    <span>Pedro Quintana</span>
-                    <span>Aguadulce 22 2D</span>
-                    <span>España</span>
-                    <span>658587896</span>
+                    <span class="mt-1 mb-1">Pedro Quintana</span>
+                    <span class="mt-1 mb-1">Aguadulce 22 2D</span>
+                    <span class="mt-1 mb-1">España</span>
+                    <span class="mt-1 mb-1">658587896</span>
                     <button>EDIT ADDRESS</button>
                 </div>
-                <div>
+                <div class="d-flex flex-column">
                     <h4>SHIPPING</h4>
-                    <span>Pedro Quintana</span>
-                    <span>Aguadulce 22 2D</span>
-                    <span>España</span>
-                    <span>658587896</span>
+                    <span class="mt-1 mb-1">Pedro Quintana</span>
+                    <span class="mt-1 mb-1">Aguadulce 22 2D</span>
+                    <span class="mt-1 mb-1">España</span>
+                    <span class="mt-1 mb-1">658587896</span>
                     <button>EDIT ADDRESS</button>
                 </div>
             </article>
@@ -143,6 +143,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
 </script>
 <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+
 </body>
 
 </html>

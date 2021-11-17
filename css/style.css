@@ -863,11 +863,12 @@ a {
         justify-content: space-between;
     }
     .header img {
-        /* display: none; */
         height: 10vh;
         margin: .25rem 0 .25rem 0;
     }
-    /* ==== INDEX ==== */
+
+    /* ======================= INDEX ======================= */
+
     .form_search {
         display: none;
     }
@@ -875,7 +876,7 @@ a {
         display: none;
     }
 
-    .nav-menu {
+    .nav-menu{
         display: inline;
         position: fixed;
         left: -100%;
@@ -958,19 +959,68 @@ a {
     .product_card img {
         width: 60vw;
     }
-    /* ==== PROFILE ==== */
-    .section_profile_right article {
+
+    /* ======================= PROFILE ======================= */
+
+    .main_profile,
+    .section_profile_right article,
+    .section_profile_right article div div {
         flex-direction: column !important;
-        align-items: center;
-    }
-    .section_profile_right article div {
-        width: 75vw;
-    }
-    .section_profile_right article div:nth-child(2) {
-        margin-top: 2rem;
     }
 
-    /* ==== LOG IN ==== */
+    .main_profile button{
+        width: 100%;
+    }
+
+    .section_profile_left{
+        justify-content: center;
+        align-items: center;
+        margin: 2.5rem 1rem 1rem 1rem;
+    }
+    
+    .section_profile_left img{
+        width: max-content;
+        display: block;
+        margin: auto;
+        margin-top: 1.5rem;
+    }
+
+    .section_profile_left div{
+        width: 100%;
+    }
+
+    .section_profile_left div button{
+        margin-bottom: 1rem;
+    }
+
+
+    .section_profile_right{
+        margin: 0 !important;
+    }
+
+    .section_profile_right h3{
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .section_profile_right article{
+        margin: 1rem 1rem;
+    }
+
+    .section_profile_right article div{
+        margin-bottom: 1rem;
+    }
+
+    .section_profile_right button{
+        margin-top: 1.5rem;
+    }
+
+    .section_profile_right article>div{
+        width: 100%;
+    }
+
+    /* ======================= LOGIN ======================= */
+
     .container_login,
     .container_register {
         width: 100vw;
@@ -979,6 +1029,7 @@ a {
     }
 
     /* ======================= ABOUT US ======================= */
+
     .div_about h1 {
         margin: 1.5rem 1.5rem .75rem 1.5rem;
         text-align: center;
@@ -1021,11 +1072,12 @@ a {
     }
 
     .footer_div_father div:nth-child(2) h5{
-        width: 100% !important;
+        width: 100%;
     }
 
     .footer_div_father div:nth-child(2) div div span{
         font-size: var(--small-font-size);
+        text-align: end;
     }
 
     .footer_down{
@@ -1037,7 +1089,8 @@ a {
     }
 
     .footer_down div p{
-        margin: 0 !important;
+        margin: 0;
+        text-align: center;
     }
 }
 
@@ -1090,14 +1143,18 @@ a {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
-    /* ==== LOG IN ==== */
+
+    /* ======================= LOGIN ======================= */
+
     .container_login,
     .container_register {
         width: 100vw;
         margin: 0;
         border-radius: 0;
     }
-    /* ==== SHOP STORE ==== */
+
+    /* ======================= SHOP STORE ======================= */
+
     .section_shop_left {
         display: none;
     }
@@ -1112,7 +1169,9 @@ a {
     .linea {
         display: none;
     }
-    /* ==== PROFILE ==== */
+
+    /* ======================= PROFILE ======================= */
+
     .main_profile {
         flex-direction: column !important;
         align-items: center;
@@ -1126,8 +1185,14 @@ a {
     .section_profile_left div {
         margin-top: 2rem;
     }
+
+    .section_profile_left button,
+    .section_profile_right button{
+        margin-top: 1rem !important;
+    }
+
     .section_profile_right {
-        margin: 2rem 0 2rem 0;
+        margin: 2rem 0 2rem 0 !important;
         height: fit-content;
     }
     .section_profile_right article {
@@ -1139,7 +1204,7 @@ a {
         width: 45vw;
     }
     .section_profile_right article div div {
-        flex-direction: column;
+        flex-direction: column !important; 
     }
     .section_profile_right h3 {
         text-align: center;
@@ -1147,6 +1212,7 @@ a {
     }
 
     /* ======================= ABOUT US ======================= */
+
     .div_about h1 {
         margin: 1.5rem 1.5rem .75rem 1.5rem;
         text-align: center;
@@ -1181,42 +1247,80 @@ a {
     .about_desc_right h3 {
         font-size: large;
     }
+
+    /* ======================= FOOTER ======================= */
+
+    .footer_div_father{
+        flex-direction: column !important;
+    }
+
+    .footer_div_father div:nth-child(2) h5{
+        width: 100%;
+    }
+
+    .footer_div_father div:nth-child(2) div div span{
+        font-size: var(--normal-font-size);
+        text-align: end;
+    }
+
+    .footer_down{
+        flex-direction: column !important;
+    }
+
+    .footer_down div{
+        margin: 1rem 0 !important;
+    }
+
+    .footer_down div p{
+        margin: 0;
+        text-align: center;
+    }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 996px) {
+    
+    /* ======================= PROFILE ======================= */
+
+    .main_profile {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .section_profile_left {
+        height: fit-content;
+    }
+    .section_profile_left h2 {
+        margin-top: 2.5rem;
+    }
     .section_profile_left div {
-        margin-top: 5.5rem;
+        margin-top: 2rem;
     }
+
+    .section_profile_left button,
+    .section_profile_right button{
+        margin-top: 1rem !important;
+    }
+
     .section_profile_right {
-        justify-content: space-around;
-    }
-    .section_profile_right h3:nth-child(1) {
-        margin: 0;
-    }
-    .section_profile_right h3:nth-child(3) {
-        margin-top: 0;
-    }
-    .section_profile_right h3 {
-        text-align: center;
+        margin: 2rem 0 2rem 0 !important;
+        height: fit-content;
     }
     .section_profile_right article {
-        flex-direction: column;
-        width: fit-content;
-        height: 90vh;
+        justify-content: space-evenly;
+        width: 100vw;
     }
     .section_profile_right article div {
         margin: 0;
-        width: 65vw;
-        height: fit-content;
+        width: 45vw;
     }
-    .section_profile_right article:nth-child(4) {
-        margin: 0;
-        width: fit-content;
-        height: 100vh;
+    .section_profile_right article div div {
+        flex-direction: column !important;
     }
-    .section_profile_right article div>div {
-        flex-direction: column;
+    .section_profile_right h3 {
+        text-align: center;
+        margin: 2rem 0 2rem 0 !important;
     }
+
     /* ======================= ABOUT US ======================= */
     .div_about h1 {
         margin: 2rem 2rem 1rem 2rem;
@@ -1252,11 +1356,38 @@ a {
     .about_desc_right h3 {
         font-size: x-large;
     }
+
+    /* ======================= FOOTER ======================= */
+
+    .footer_div_father{
+        flex-direction: column !important;
+    }
+
+    .footer_div_father div:nth-child(2) h5{
+        width: 100%;
+    }
+
+    .footer_div_father div:nth-child(2) div div span{
+        font-size: var(--normal-font-size);
+        text-align: end;
+    }
+
+    .footer_down{
+        flex-direction: column !important;
+    }
+
+    .footer_down div{
+        margin: 1rem 0 !important;
+    }
+
+    .footer_down div p{
+        margin: 0;
+        text-align: center;
+    }
+
 }
 
 @media screen and (min-width: 1000px) {
 
-    .footer_down div{
-        margin-left: 1rem;
-    }
+
 }
