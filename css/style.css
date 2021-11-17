@@ -594,7 +594,7 @@ footer {
 .product_card {
     box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.2);
     width: auto;
-    height: 375px;
+    height: 400px;
     padding: 1rem;
     margin: 1rem;
     cursor: pointer;

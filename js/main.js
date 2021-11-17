@@ -1,5 +1,3 @@
-// const { $ } = require("dom7");
-
 $(function() {
     init();
 });
@@ -49,6 +47,10 @@ function initJSON() {
             // $(".product-container").load("../product_card_template.html");
             $.get("../product_card_template.html", function(html) {
                 $(".product-container").append(html);
+                $(".product_card img").addClass("product_img[" + key + "]");
+                $(".product_card h4").addClass("product_name[" + key + "]");
+                $(".product_card h5").addClass("product_price[" + key + "]");
+                $(".product_name[" + key + "]").html("nombre" + key);
             });
         });
     });
