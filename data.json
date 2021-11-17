@@ -1,0 +1,23 @@
+{
+    "Products": [
+        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" },
+        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" },
+        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" },
+        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" },
+        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" },
+        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" },
+        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" },
+        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" }
+    ],
+
+    "Sizes": [
+        { "n": 40 },
+        { "n": 41.5 },
+        { "n": 42 },
+        { "n": 42.5 },
+        { "n": 43 },
+        { "n": 44 },
+        { "n": 44.5 },
+        { "n": 45 }
+    ]
+}
