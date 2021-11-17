@@ -1,6 +1,7 @@
 $(function() {
     initValidateLoginForm();
     initValidateSignUpForm();
+    initValidatePayment();
 });
 
 function initValidateSignUpForm() {

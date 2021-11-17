@@ -43,13 +43,10 @@
     </header>
 
     <main class="main_shipping">
-
-        <section class="shipping_data">
-            <div id="div">
-                <div id="div1">
-                    <h1>Shipping address</h1>
-                    <hr>
-                    <form action="" id="shippingForm" method="post">
+        <section class="shipping_data w-100">
+            <form action="" class="d-flex flex-row justify-content-between" id="shippingForm" method="post">
+                <div class="d-flex flex-column col-6" id="div1">
+                    <h1 class="mb-4">Shipping address</h1>
                     <label for="name">Name and surname</label>
                     <input type="text" name="name" id="name" required>
                     <label for="address">Main address:</label>
@@ -65,29 +62,25 @@
                     <label for="phone">Phone:</label>
                     <input type="tel" name="phone" id="phone" required>
                 </div>
-                <div id="div2">
-                    <section class="payment_data">
-                        <h1>TOTAL</h1>
-                        <hr>
-                        <div class="payment_subtotal">
-                            <h3>Subtotal</h3>
-                            <h3>20,00 €</h3>
-                        </div>
-                        <h3>Shipment</h3>
-                        <h5>Standard shipping (5€)</h5>
-                        <hr>
-                        <button id="pay" type="submit">PAY NOW</button>
-                        <h3>WE ACCEPT:</h3>
-                        <div class="payments_method">
-                            <img src="DAW1_resources/visa.png" alt="">
-                            <img src="DAW1_resources/mastercard.png" alt="">
-                            <img src="DAW1_resources/paypal.png" alt="">
-                            <img src="DAW1_resources/Google-Pay.png" alt="">
-                        </div>
-                    </form>
-                    </section>
+                <div class="payment_data col-4" id="div2">
+                    <h1 class="text-center">TOTAL</h1>
+                    <div class="d-flex flex-row justify-content-between">
+                        <h3>Subtotal</h3>
+                        <h3>20,00 €</h3>
+                    </div>
+                    <h3>Shipment</h3>
+                    <h5>Standard shipping (5€)</h5>
+                    <hr>
+                    <button id="pay" type="submit">PAY NOW</button>
+                    <h3>WE ACCEPT:</h3>
+                    <div class="payments_method">
+                        <img src="DAW1_resources/visa.png" alt="">
+                        <img src="DAW1_resources/mastercard.png" alt="">
+                        <img src="DAW1_resources/paypal.png" alt="">
+                        <img src="DAW1_resources/Google-Pay.png" alt="">
+                    </div>
                 </div>
-            </div>
+            </form>
         </section>
 
     </main>
@@ -137,10 +130,8 @@
     <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-
     <script src="./js/validation-form.js"></script>
     <script src="./js/main.js"></script>
-
 </body>
 
 </html>

@@ -631,9 +631,6 @@ footer {
 
 .main_shipping {
     background-color: #ebebeb;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 100vw;
     height: max-content;
 }
@@ -644,9 +641,8 @@ footer {
 }
 
 .shipping_data {
-    margin: 2rem 1rem 2rem 4rem;
     padding: 2rem;
-    width: 50vw;
+    width: fit-content;
     height: fit-content;
     background-color: white;
 }
@@ -669,14 +665,6 @@ footer {
     width: 100%;
 }
 
-.shipping_data hr {
-    margin: 1.5rem 0 1.5rem;
-}
-
-.payment_data hr {
-    margin: 1.5rem 0 .5rem;
-}
-
 .payment_data hr:nth-child(6) {
     background-color: #c4c4c4 !important;
     margin: 0 0 1.5rem !important;
@@ -684,16 +672,7 @@ footer {
 
 .payment_data {
     background-color: white;
-    margin: 2rem 4rem 2rem 1rem;
-    padding: 2rem;
-    width: 35.625vw;
     height: 50vh;
-}
-
-.payment_subtotal {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .payment_data h3,
@@ -722,20 +701,20 @@ h5 {
     height: 20px;
 }
 
-
-/* ======================= REGISTER ======================= */
-
-.container_register {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background-color: hsl(355, 68%, 53%);
-    width: 40vw;
-    border-radius: 2rem;
-    padding: 2rem;
+#div {
+    display: flex;
+    flex-direction: row;
 }
 
-.social_media {
-    margin: 1rem 0 0 1rem;
+#div1 {
+    margin: auto;
+    width: -webkit-fill-available;
+    margin-top: inherit;
+}
+
+#div2 {
+    margin-top: inherit;
+    margin: auto;
 }
 
 
@@ -1066,6 +1045,16 @@ a {
     .product_card h4 {
         font-size: var(--normal-font-size);
     }
+    /* ======================= SHIPPING PAYMENT ======================= */
+    .shipping_data form {
+        flex-direction: column !important;
+    }
+    .shipping_data form div {
+        max-width: 100% !important;
+    }
+    .payment_data h1 {
+        margin-top: 2rem;
+    }
     /* ======================= FOOTER ======================= */
     .footer_div_father {
         flex-direction: column !important;
@@ -1357,4 +1346,8 @@ a {
     }
 }
 
-@media screen and (min-width: 1000px) {}
+<<<<<<< HEAD @media screen and (min-width: 1000px) {}
+
+=======@media screen and (min-width: 1000px) and (max-width: 1250px) {}
+
+>>>>>>>8bfae36e1a3c50c937ce1790c4e33e2758304f30
