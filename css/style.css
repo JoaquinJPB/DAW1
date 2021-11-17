@@ -625,9 +625,6 @@ footer{
 
 .main_shipping {
     background-color: #ebebeb;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     width: 100vw;
     height: max-content;
 }
@@ -637,10 +634,9 @@ footer{
     font-weight: var(--font-bold);
 }
 
-.shipping_data {
-    margin: 2rem 1rem 2rem 4rem;
+.shipping_data{
     padding: 2rem;
-    width: 50vw;
+    width: fit-content;
     height: fit-content;
     background-color: white;
 }
@@ -663,14 +659,6 @@ footer{
     width: 100%;
 }
 
-.shipping_data hr {
-    margin: 1.5rem 0 1.5rem;
-}
-
-.payment_data hr {
-    margin: 1.5rem 0 .5rem;
-}
-
 .payment_data hr:nth-child(6) {
     background-color: #c4c4c4 !important;
     margin: 0 0 1.5rem !important;
@@ -678,16 +666,7 @@ footer{
 
 .payment_data {
     background-color: white;
-    margin: 2rem 4rem 2rem 1rem;
-    padding: 2rem;
-    width: 35.625vw;
     height: 50vh;
-}
-
-.payment_subtotal {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .payment_data h3,
@@ -1067,6 +1046,19 @@ a {
         font-size: large;
     }
 
+    /* ======================= SHIPPING PAYMENT ======================= */
+    .shipping_data form{
+        flex-direction: column !important;
+    }
+
+    .shipping_data form div{
+        max-width: 100% !important;
+    }
+
+    .payment_data h1{
+        margin-top: 2rem;
+    }
+
     /* ======================= FOOTER ======================= */
 
     .footer_div_father{
@@ -1389,7 +1381,7 @@ a {
 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) and (max-width: 1250px) {
 
 
 }
