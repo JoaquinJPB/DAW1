@@ -588,16 +588,20 @@ footer {
 
 .shop_item {
     background-color: rgba(0, 0, 0, 0.04);
-    margin-top: 2rem;
 }
 
 .product_card {
     box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.2);
     width: auto;
-    height: 400px;
+    /* height: 400px; */
     padding: 1rem;
     margin: 1rem;
     cursor: pointer;
+}
+
+.crop img {
+    /* max-width: 240px; */
+    object-fit: cover;
 }
 
 .columna {

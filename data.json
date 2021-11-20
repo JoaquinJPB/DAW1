@@ -1,13 +1,13 @@
 {
     "Products": [
         { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" },
-        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" },
-        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" },
-        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" },
-        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" },
-        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" },
-        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" },
-        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "Jordan Delta 2", "precio": "190€" }
+        { "imagen": "DAW1_resources/air_force_one.png", "nombre": "afvdfv Delta 2", "precio": "190€" },
+        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "tttt Delta 2", "precio": "190€" },
+        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "kkkk Delta 2", "precio": "190€" },
+        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "ttt Delta 2", "precio": "190€" },
+        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "yyyy Delta 2", "precio": "190€" },
+        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "iiiii Delta 2", "precio": "190€" },
+        { "imagen": "DAW1_resources/Rectangle 25-1.png", "nombre": "oooo Delta 2", "precio": "190€" }
     ],
 
     "Sizes": [
