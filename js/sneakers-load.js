@@ -16,6 +16,7 @@ function initSneakers() {
                 $("#product-container").append(template);
                 $("#product-container").children().last().find("#sneaker_image").attr('src', value.grid_picture_url);
                 $("#product-container").children().last().find("#sneaker_name").html(value.name);
+                $("#product-container").children().last().find("#sneaker_id").html(value.id);
                 $("#product-container").children().last().find("#price").html(value.retail_price_cents);
             });
         });

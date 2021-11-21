@@ -4,24 +4,25 @@ $(function() {
 
 function init() {
     initHeader();
+    initHamburger();
     initFooter();
 }
 
 function initHeader() {
-    // $("header").load("../templates/header.html");
-    initHamburger();
+    $("header").load("../templates/header.html");
 }
 
 function initFooter() {
-    // $("footer").load("../templates/footer.html")
+    $("footer").load("../templates/footer.html")
 }
-
-
 
 function initHamburger() {
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
     const navLink = document.querySelectorAll(".nav-link");
+    console.log(hamburger);
+    console.log(navMenu);
+    console.log(navLink);
 
     hamburger.addEventListener("click", mobileMenu);
     navLink.forEach(n => n.addEventListener("click", closeMenu));
