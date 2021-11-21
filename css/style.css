@@ -100,6 +100,10 @@ a:active {
     height: calc(100vh - 120px);
 }
 
+.container_home img {
+    visibility: hidden;
+}
+
 
 /* ======================= SEARCH ======================= */
 
@@ -220,6 +224,7 @@ a:active {
 .col_women {
     background-image: url(../DAW1_resources/shopwomen.png);
     background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 100vh;
 }
@@ -227,6 +232,7 @@ a:active {
 .col_men {
     background-image: url(../DAW1_resources/shopmen.jpeg);
     background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 100vh;
 }
@@ -411,7 +417,8 @@ footer {
 
 /* ======================= LOGIN ======================= */
 
-.container_login {
+.container_login,
+.container_register {
     margin-top: 2rem;
     margin-bottom: 2rem;
     background-color: hsl(355, 68%, 53%);
@@ -476,7 +483,8 @@ footer {
     color: white;
 }
 
-.button_login {
+.button_login,
+.button_register {
     width: 100%;
     padding: .5rem 0;
     background-color: white;
@@ -485,6 +493,10 @@ footer {
     font-weight: 700;
     border-radius: .25rem;
     margin-top: 2rem;
+}
+
+.button_register {
+    margin-bottom: 2rem;
 }
 
 .p_login {
@@ -860,7 +872,10 @@ a {
         margin: .25rem 0 .25rem 0;
     }
     /* ======================= INDEX ======================= */
-    .form_search {
+    .container_home img {
+        visibility: visible !important;
+    }
+    .container_search {
         display: none;
     }
     .nav_home {
@@ -913,6 +928,15 @@ a {
         background-size: 100vw auto;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        height: fit-content;
+    }
+    .col_women,
+    .col_men,
+    .col_sales {
+        height: 60vh !important;
+    }
+    .title_sales {
+        margin: 0 !important;
     }
     .linea {
         display: none;
@@ -1085,6 +1109,27 @@ a {
 @media screen and (min-width: 501px) and (max-width: 767px) {
     .header {
         justify-content: flex-end;
+    }
+    .container_home {
+        background-image: url(../DAW1_resources/images/bg2-web.png);
+        background-size: 100vw auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: fit-content;
+    }
+    .container_home img {
+        visibility: visible !important;
+    }
+    .container_search {
+        display: none;
+    }
+    .col_women,
+    .col_men,
+    .col_sales {
+        height: 60vh !important;
+    }
+    .title_sales {
+        margin: 0 !important;
     }
     .nav_home {
         display: none;
@@ -1349,9 +1394,3 @@ a {
         text-align: center;
     }
 }
-
-<<<<<<< HEAD @media screen and (min-width: 1000px) {}
-
-=======@media screen and (min-width: 1000px) and (max-width: 1250px) {}
-
->>>>>>>8bfae36e1a3c50c937ce1790c4e33e2758304f30
