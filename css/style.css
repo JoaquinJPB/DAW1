@@ -596,19 +596,35 @@ footer {
 
 .section_shop_right h1 {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .shop_item {
-    background-color: rgba(0, 0, 0, 0.04);
+    padding: 1rem;
 }
 
-.product_card {
-    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.2);
+.product_card{
+    border: 1px solid var(--first-color-light);
+    border-radius: .5rem;
     width: auto;
-    /* height: 400px; */
-    padding: 1rem;
-    margin: 1rem;
+    height: fit-content;
+    margin-bottom: 2rem;
     cursor: pointer;
+}
+
+#sneaker_name{
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+#price{
+    font-size: 1rem;
+}
+
+.product_card div:nth-child(3){
+    background-color: #ebebeb5b;
+    padding: 1rem;
+    text-align: center;
 }
 
 .crop img {
@@ -618,10 +634,6 @@ footer {
 
 .columna {
     height: 100%;
-}
-
-.product_card h4 {
-    margin-top: 1rem;
 }
 
 .product_card h4:hover {
@@ -692,7 +704,7 @@ footer {
 }
 
 .payment_data h3,
-h5 {
+.payment_data h5 {
     font-size: var(--normal-font-size);
     margin-top: 1rem;
 }
@@ -1065,7 +1077,6 @@ a {
     }
     .product_card {
         margin: 0 0 2rem 0;
-        height: 275px;
     }
     .product_card img {
         margin: 0 !important;
@@ -1195,7 +1206,6 @@ a {
     }
     .product_card {
         margin: 0 0 2rem 0;
-        height: 350px;
     }
     .product_card img {
         margin: 0 !important;
