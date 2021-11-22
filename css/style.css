@@ -615,6 +615,9 @@ footer {
 #sneaker_name{
     font-size: 1.1rem;
     width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 #price{
@@ -636,8 +639,12 @@ footer {
     height: 100%;
 }
 
-.product_card h4:hover {
+.product_card h4:hover,
+.product_card h4:focus{
     font-weight: bold;
+    color: var(--first-color);
+    white-space: normal !important;
+    text-overflow: clip !important;
 }
 
 .product_card h5:hover {
