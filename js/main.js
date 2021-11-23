@@ -3,7 +3,7 @@ $(function() {
 });
 
 function init() {
-    initHeader();
+    //initHeader();
     initFooter();
     initHamburger();
 }
