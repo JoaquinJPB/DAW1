@@ -16,7 +16,36 @@
 <body>
 
     <header class="header">
-
+        <nav class="d-flex justify-content-between align-items-center p-1 w-100">
+            <a href="index.html"><img src="../DAW1_resources/Logo_Web.png" alt="Logo_Web"></a>
+            <ul class="nav-menu d-flex justify-content-between align-items-center">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link-nav">
+                        <i class='bx bxs-home nav_icon'><span>HOME</span></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link-nav">
+                        <i class='bx bx-info-circle nav_icon'><span>ABOUT</span></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link-nav">
+                        <i class='bx bxs-store nav_icon'><span>STORE</span></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="profile.html" class="nav-link-nav">
+                        <i class='bx bxs-user nav_icon'><span>PROFILE</span></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger d-none">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
 
     <nav class="nav_home">
@@ -53,26 +82,24 @@
     <section class="container-fluid container_category">
         <div class="row">
             <div class="d-flex flex-column align-items-center justify-content-end col-12 col-md-auto col-xl-4 col_women">
-                <button type="button" class="button_category">WOMEN</button>
+                <button type="button" class="button_category" onclick="window.location.href='/shop.html'">WOMEN</button>
             </div>
 
             <div class="d-flex flex-column align-items-center justify-content-end col-12 col-md-auto col-xl-4 col_men">
-                <button type="button" class="button_category">MEN</button>
+                <button type="button" class="button_category" onclick="window.location.href='/shop.html'">MEN</button>
             </div>
 
             <div class="d-flex flex-column align-items-center justify-content-end col-12 col-md-auto col-xl-4 col_sales">
                 <h1 class="title_sales">FALL 2021 SALE</h1>
                 <h1 class="title_sales">UP TO 60 OFF</h1>
-                <button type="button" class="button_category">SALES</button>
+                <button type="button" class="button_category" onclick="window.location.href='/shop.html'">SALES</button>
             </div>
         </div>
     </section>
 
     <section class="container-fluid container_products">
         <div class="div_titulo d-flex flex-row justify-content-between align-items-center">
-            <div class="titulo">
-                <h2>Popular Brands</h2>
-            </div>
+            <h2>Popular Brands</h2>
             <div class="linea "></div>
         </div>
         <div class="popular_brands d-flex flex-row justify-content-between w-100">
@@ -94,9 +121,7 @@
         </div>
         <div class="div_titulo d-flex flex-row justify-content-between align-items-center">
             <div class="linea"></div>
-            <div class="titulo">
-                <h2>Most Popular Sneakers</h2>
-            </div>
+            <h2>Popular Sneakers</h2>
         </div>
 
         <!-- Slider main container -->
