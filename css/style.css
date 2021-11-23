@@ -603,7 +603,7 @@ footer {
     padding: 1rem;
 }
 
-.product_card{
+.product_card {
     border: 2px solid var(--first-color-light);
     border-radius: .5rem;
     width: auto;
@@ -613,12 +613,12 @@ footer {
 }
 
 .product_card:hover,
-.product_card:focus{
+.product_card:focus {
     border: 2px solid black;
     border-bottom: 5px solid black;
 }
 
-#sneaker_name{
+#sneaker_name {
     font-size: 1.1rem;
     width: 100%;
     white-space: nowrap;
@@ -626,11 +626,11 @@ footer {
     overflow: hidden;
 }
 
-#price{
+#price {
     font-size: 1rem;
 }
 
-.product_card div:nth-child(3){
+.product_card div:nth-child(3) {
     background-color: #ebebeb5b;
     padding: 1rem;
     text-align: center;
@@ -646,7 +646,7 @@ footer {
 }
 
 .product_card h4:hover,
-.product_card h4:focus{
+.product_card h4:focus {
     font-weight: bold;
     color: var(--first-color);
     white-space: normal !important;
@@ -1152,12 +1152,10 @@ a {
     .col_sales {
         height: 60vh !important;
     }
-
     .popular_brands {
         flex-direction: column !important;
         align-items: center !important;
     }
-
     .title_sales {
         margin: 0 !important;
     }
@@ -1422,11 +1420,9 @@ a {
         margin: 0;
         text-align: center;
     }
-
 }
 
 @media screen and (min-width: 997px) and (max-width: 1255px) {
-
     .main_profile {
         flex-direction: column !important;
         align-items: center;
@@ -1440,12 +1436,10 @@ a {
     .section_profile_left div {
         margin-top: 2rem;
     }
-
     .section_profile_left button,
-    .section_profile_right button{
+    .section_profile_right button {
         margin-top: 1rem !important;
     }
-
     .section_profile_right {
         margin: 2rem 0 2rem 0 !important;
         height: fit-content;
@@ -1465,5 +1459,4 @@ a {
         text-align: center;
         margin: 2rem 0 2rem 0 !important;
     }
-
 }

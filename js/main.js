@@ -20,9 +20,9 @@ function initHamburger() {
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
     const navLink = document.querySelectorAll(".nav-link");
-    console.log(hamburger);
-    console.log(navMenu);
-    console.log(navLink);
+    // console.log(hamburger);
+    // console.log(navMenu);
+    // console.log(navLink);
 
     hamburger.addEventListener("click", mobileMenu);
     navLink.forEach(n => n.addEventListener("click", closeMenu));

@@ -1,5 +1,4 @@
 $(function() {
-    console.log(window.location.pathname);
     let location = window.location.pathname;
     if (location == "/shop.html") {
         initSneakers();
@@ -17,7 +16,13 @@ function initSneakers() {
                 $("#product-container").children().last().find("#sneaker_image").attr('src', value.grid_picture_url);
                 $("#product-container").children().last().find("#sneaker_name").html(value.name);
                 $("#product-container").children().last().find("#sneaker_id").html(value.id);
-                $("#product-container").children().last().find("#price").html(value.retail_price_cents/100+"€");
+                $("#product-container").children().last().on("click", function() {
+                    // localStorage.clear();
+                    let id = $(this).find("#sneaker_id").text();
+                    localStorage.setItem("sneaker_id", id);
+                    window.location.href = "/product.html";
+                });
+                $("#product-container").children().last().find("#price").html(value.retail_price_cents / 100 + "€");
             });
         });
     });
@@ -32,9 +37,8 @@ function initMostPopularSneakers() {
                 $(".swiper-wrapper").children().last().find("#most_popular_image").attr('src', value.grid_picture_url);
                 $(".swiper-wrapper").children().last().find("#sneaker_name").html(value.name);
                 $(".swiper-wrapper").children().last().find("#sneaker_color").html(value.color);
-                $(".swiper-wrapper").children().last().find("#price").html(value.retail_price_cents/100+"€");
+                $(".swiper-wrapper").children().last().find("#price").html(value.retail_price_cents / 100 + "€");
             });
         });
     });
 }
-
