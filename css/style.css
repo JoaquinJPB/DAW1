@@ -604,12 +604,18 @@ footer {
 }
 
 .product_card{
-    border: 1px solid var(--first-color-light);
+    border: 2px solid var(--first-color-light);
     border-radius: .5rem;
     width: auto;
     height: fit-content;
     margin-bottom: 2rem;
     cursor: pointer;
+}
+
+.product_card:hover,
+.product_card:focus{
+    border: 2px solid black;
+    border-bottom: 5px solid black;
 }
 
 #sneaker_name{
