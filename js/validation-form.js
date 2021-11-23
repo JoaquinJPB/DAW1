@@ -77,9 +77,9 @@ function initValidateLoginForm() {
 function initValidatePayment() {
     $("#shippingForm").validate({ //#register-form is form id
         rules: {
-            name: {
+            name:{
                 required: true,
-                minLength: 6
+                minlength: 8
             },
             address: "required",
             postal: "required",
@@ -92,7 +92,10 @@ function initValidatePayment() {
         },
         // Mensajes de errores
         messages: {
-            name: "Enter Username",
+            name:{
+                required: "Enter Username",
+                minlength: 'Your name must be at least 8 characters long',
+            }, 
             address: "Enter Address",
             postal: "Enter Postal Code",
             town: "Enter Town",
