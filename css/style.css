@@ -596,19 +596,38 @@ footer {
 
 .section_shop_right h1 {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .shop_item {
-    background-color: rgba(0, 0, 0, 0.04);
+    padding: 1rem;
 }
 
-.product_card {
-    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.2);
+.product_card{
+    border: 1px solid var(--first-color-light);
+    border-radius: .5rem;
     width: auto;
-    /* height: 400px; */
-    padding: 1rem;
-    margin: 1rem;
+    height: fit-content;
+    margin-bottom: 2rem;
     cursor: pointer;
+}
+
+#sneaker_name{
+    font-size: 1.1rem;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#price{
+    font-size: 1rem;
+}
+
+.product_card div:nth-child(3){
+    background-color: #ebebeb5b;
+    padding: 1rem;
+    text-align: center;
 }
 
 .crop img {
@@ -620,12 +639,12 @@ footer {
     height: 100%;
 }
 
-.product_card h4 {
-    margin-top: 1rem;
-}
-
-.product_card h4:hover {
+.product_card h4:hover,
+.product_card h4:focus{
     font-weight: bold;
+    color: var(--first-color);
+    white-space: normal !important;
+    text-overflow: clip !important;
 }
 
 .product_card h5:hover {
@@ -692,7 +711,7 @@ footer {
 }
 
 .payment_data h3,
-h5 {
+.payment_data h5 {
     font-size: var(--normal-font-size);
     margin-top: 1rem;
 }
@@ -1065,7 +1084,6 @@ a {
     }
     .product_card {
         margin: 0 0 2rem 0;
-        height: 275px;
     }
     .product_card img {
         margin: 0 !important;
@@ -1195,7 +1213,6 @@ a {
     }
     .product_card {
         margin: 0 0 2rem 0;
-        height: 350px;
     }
     .product_card img {
         margin: 0 !important;
@@ -1393,4 +1410,48 @@ a {
         margin: 0;
         text-align: center;
     }
+
+}
+
+@media screen and (min-width: 997px) and (max-width: 1255px) {
+
+    .main_profile {
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .section_profile_left {
+        height: fit-content;
+    }
+    .section_profile_left h2 {
+        margin-top: 2.5rem;
+    }
+    .section_profile_left div {
+        margin-top: 2rem;
+    }
+
+    .section_profile_left button,
+    .section_profile_right button{
+        margin-top: 1rem !important;
+    }
+
+    .section_profile_right {
+        margin: 2rem 0 2rem 0 !important;
+        height: fit-content;
+    }
+    .section_profile_right article {
+        justify-content: space-evenly;
+        width: 100vw;
+    }
+    .section_profile_right article div {
+        margin: 0;
+        width: 45vw;
+    }
+    .section_profile_right article div div {
+        flex-direction: column !important;
+    }
+    .section_profile_right h3 {
+        text-align: center;
+        margin: 2rem 0 2rem 0 !important;
+    }
+
 }
