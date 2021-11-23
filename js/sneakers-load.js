@@ -8,6 +8,10 @@ $(function() {
     }
 });
 
+function loadProduct() {
+    console.log($(this));
+}
+
 function initSneakers() {
     $.getJSON("../sneakers.json", function(json) {
         $.each(json.sneakers, function(key, value) {
