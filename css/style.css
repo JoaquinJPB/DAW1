@@ -1152,6 +1152,12 @@ a {
     .col_sales {
         height: 60vh !important;
     }
+
+    .popular_brands {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
     .title_sales {
         margin: 0 !important;
     }
