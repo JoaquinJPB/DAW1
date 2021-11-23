@@ -26,6 +26,10 @@
     margin: 0;
 }
 
+body,html{
+    overflow-x: hidden;
+}
+
 body {
     font-family: var(--body-font);
 }
@@ -505,24 +509,21 @@ footer {
     margin-top: 1rem;
 }
 
-
 /* ======================= PRODUCT ======================= */
 
-.product {
-    background-color: white;
+.product{
     height: fit-content;
 }
 
-.product img {
-    margin: 4rem;
-    width: 45vw;
+.sneaker_image{
+    width: 50vw;
 }
 
-.product h3 {
+.sneaker_subtitle{
     font-weight: lighter;
 }
 
-.labels {
+.labels{
     width: fit-content;
     border: rgb(61, 61, 61) 2px solid;
     padding: 0.5rem;
@@ -530,20 +531,25 @@ footer {
     display: inline-block;
 }
 
-.size h4 {
+
+.details strong{
+    color: var(--first-color);
+}
+
+.size{
     font-weight: var(--font-light);
     padding: 0 !important;
     width: 100%;
     margin-top: .5rem;
 }
 
-.size_number {
-    border: 1px solid black;
+.size_number{
     padding: 0 !important;
     margin: 0 !important;
+    cursor: pointer;
 }
 
-.size button {
+.details button {
     border: 0;
     background-color: var(--first-color);
     color: white;
@@ -603,7 +609,7 @@ footer {
     padding: 1rem;
 }
 
-.product_card{
+.product_card {
     border: 2px solid var(--first-color-light);
     border-radius: .5rem;
     width: auto;
@@ -613,12 +619,12 @@ footer {
 }
 
 .product_card:hover,
-.product_card:focus{
+.product_card:focus {
     border: 2px solid black;
     border-bottom: 5px solid black;
 }
 
-#sneaker_name{
+#sneaker_name {
     font-size: 1.1rem;
     width: 100%;
     white-space: nowrap;
@@ -626,11 +632,11 @@ footer {
     overflow: hidden;
 }
 
-#price{
+#price {
     font-size: 1rem;
 }
 
-.product_card div:nth-child(3){
+.product_card div:nth-child(3) {
     background-color: #ebebeb5b;
     padding: 1rem;
     text-align: center;
@@ -646,7 +652,7 @@ footer {
 }
 
 .product_card h4:hover,
-.product_card h4:focus{
+.product_card h4:focus {
     font-weight: bold;
     color: var(--first-color);
     white-space: normal !important;
@@ -729,12 +735,6 @@ footer {
     border: none;
     color: white;
     font-size: 1.25rem;
-}
-
-.payments_method {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .payments_method img {
@@ -882,6 +882,14 @@ a {
     color: #482ff7;
 }
 
+.social_media .error{
+    color: white;
+}
+
+.shipping_data .error{
+    color: var(--first-color);
+}
+
 
 /* ======================= MEDIA QUERIES ======================= */
 
@@ -906,7 +914,7 @@ a {
     .nav_home {
         display: none;
     }
-    .nav-menu {
+    .nav-menu{
         display: inline;
         position: fixed;
         left: -100%;
@@ -963,6 +971,12 @@ a {
     .title_sales {
         margin: 0 !important;
     }
+    .div_titulo{
+        justify-content: center !important;
+    }
+    .div_titulo h2{
+        font-size: 2rem;
+    }
     .linea {
         display: none;
     }
@@ -990,6 +1004,10 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .swiper-slide div div {
+        width: 275px;
     }
     /* ======================= PROFILE ======================= */
     .main_profile,
@@ -1036,14 +1054,18 @@ a {
     .section_profile_right article>div {
         width: 100%;
     }
+
     /* ======================= LOGIN ======================= */
+
     .container_login,
     .container_register {
         width: 100vw;
         margin: 0;
         border-radius: 0;
     }
+
     /* ======================= ABOUT US ======================= */
+
     .div_about h1 {
         margin: 1.5rem 1.5rem .75rem 1.5rem;
         text-align: center;
@@ -1097,6 +1119,29 @@ a {
     .product_card h4 {
         font-size: var(--normal-font-size);
     }
+
+    /* ======================= PRODUCT ======================= */
+    .product div:nth-child(1){
+        flex-direction: column !important;
+    }
+
+    .product_image_details{
+        order: 1;
+    }
+
+    .sneaker_image{
+        width: 100vw;
+    }
+
+    .div_details{
+        margin-top: 2rem;
+    }
+
+    .size_number{
+        display: flex;
+        flex-direction: row !important;
+    }
+
     /* ======================= SHIPPING PAYMENT ======================= */
     .shipping_data form {
         flex-direction: column !important;
@@ -1107,6 +1152,20 @@ a {
     .payment_data h1 {
         margin-top: 2rem;
     }
+
+    .payment_data h3:nth-child(7){
+        text-align: center;
+    }
+
+    .payments_method{
+        flex-direction: column !important;
+    }
+
+    .payments_method img{
+        margin-top: 1rem;
+    }
+
+    
     /* ======================= FOOTER ======================= */
     .footer_div_father {
         flex-direction: column !important;
@@ -1134,6 +1193,12 @@ a {
     .header {
         justify-content: flex-end;
     }
+
+    /* ==== INDEX ==== */
+    .linea {
+        display: none;
+    }
+
     .container_home {
         background-image: url(../DAW1_resources/images/bg2-web.png);
         background-size: 100vw auto;
@@ -1152,12 +1217,16 @@ a {
     .col_sales {
         height: 60vh !important;
     }
-
+    .div_titulo{
+        justify-content: center !important;
+    }
+    .div_titulo h2{
+        font-size: 2rem;
+    }
     .popular_brands {
         flex-direction: column !important;
         align-items: center !important;
     }
-
     .title_sales {
         margin: 0 !important;
     }
@@ -1206,6 +1275,7 @@ a {
         -webkit-transform: translateY(-8px) rotate(-45deg);
         transform: translateY(-8px) rotate(-45deg);
     }
+
     /* ======================= LOGIN ======================= */
     .container_login,
     .container_register {
@@ -1229,10 +1299,29 @@ a {
     .product_card img {
         margin: 0 !important;
     }
-    /* ==== INDEX ==== */
-    .linea {
-        display: none;
+
+    /* ======================= PRODUCT ======================= */
+    .product div:nth-child(1){
+        flex-direction: column !important;
     }
+
+    .product_image_details{
+        order: 1;
+    }
+
+    .sneaker_image{
+        width: 100vw;
+    }
+
+    .div_details{
+        margin-top: 2rem;
+    }
+
+    .size_number{
+        display: flex;
+        flex-direction: row !important;
+    }
+
     /* ======================= PROFILE ======================= */
     .main_profile {
         flex-direction: column !important;
@@ -1305,6 +1394,26 @@ a {
     .about_desc_right h3 {
         font-size: large;
     }
+
+    /* ======================= SHIPPING PAYMENT ======================= */
+    .shipping_data form {
+        flex-direction: column !important;
+    }
+    .shipping_data form div {
+        max-width: 100% !important;
+    }
+    .payment_data h1 {
+        margin-top: 2rem;
+    }
+
+    .payment_data h3:nth-child(7){
+        text-align: center;
+    }
+
+    .payments_method img{
+        margin-top: 1rem;
+    }
+
     /* ======================= FOOTER ======================= */
     .footer_div_father {
         flex-direction: column !important;
@@ -1329,6 +1438,87 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 996px) {
+
+    /* ======================= INDEX ======================= */
+    /* ==== INDEX ==== */
+    .linea {
+        display: none;
+    }
+
+    .container_home {
+        background-image: url(../DAW1_resources/images/bg2-web.png);
+        background-size: 100vw auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: fit-content;
+    }
+    .container_home img {
+        visibility: visible !important;
+    }
+    .container_search {
+        display: none;
+    }
+    .col_women,
+    .col_men,
+    .col_sales {
+        height: 60vh !important;
+    }
+    .div_titulo{
+        justify-content: center !important;
+    }
+    .div_titulo h2{
+        font-size: 2rem;
+    }
+    .title_sales {
+        margin: 0 !important;
+    }
+    .nav_home {
+        display: none;
+    }
+    .nav-menu {
+        display: inline;
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        z-index: 10;
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+    .nav-item a span {
+        display: block;
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+    .nav-link-nav {
+        font-size: 2.5rem;
+    }
+    .hamburger {
+        display: block !important;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
     /* ======================= PROFILE ======================= */
     .main_profile {
         flex-direction: column !important;
@@ -1401,6 +1591,38 @@ a {
     .about_desc_right h3 {
         font-size: x-large;
     }
+
+    /* ======================= PRODUCT ======================= */
+    .product div:nth-child(1){
+        flex-direction: column !important;
+    }
+
+    .product_image_details{
+        order: 1;
+    }
+
+    .sneaker_image{
+        width: 100vw;
+    }
+
+    .div_details{
+        margin-top: 5rem;
+    }
+
+    .size_number{
+        display: flex;
+        flex-direction: row !important;
+    }
+
+    /* ======================= SHIPPING PAYMENT ======================= */
+    .payments_method{
+        flex-direction: column !important;
+    }
+
+    .payments_method img{
+        margin-top: 1rem;
+    }
+
     /* ======================= FOOTER ======================= */
     .footer_div_father {
         flex-direction: column !important;
@@ -1422,11 +1644,9 @@ a {
         margin: 0;
         text-align: center;
     }
-
 }
 
 @media screen and (min-width: 997px) and (max-width: 1255px) {
-
     .main_profile {
         flex-direction: column !important;
         align-items: center;
@@ -1440,12 +1660,10 @@ a {
     .section_profile_left div {
         margin-top: 2rem;
     }
-
     .section_profile_left button,
-    .section_profile_right button{
+    .section_profile_right button {
         margin-top: 1rem !important;
     }
-
     .section_profile_right {
         margin: 2rem 0 2rem 0 !important;
         height: fit-content;
@@ -1464,6 +1682,20 @@ a {
     .section_profile_right h3 {
         text-align: center;
         margin: 2rem 0 2rem 0 !important;
+    }
+
+    /* ======================= PRODUCT ======================= */
+    .sneaker_title{
+        margin-top: 4rem;
+    }
+
+    .details button{
+        margin-bottom: 4rem;
+    }
+
+    /* ======================= SHIPPING PAYMENT ======================= */
+    .shipping_data{
+        margin-bottom: 2rem;
     }
 
 }
