@@ -4,8 +4,8 @@ $(function() {
 
 function init() {
     initHeader();
-    initHamburger();
     initFooter();
+    initHamburger();
 }
 
 function initHeader() {
