@@ -40,14 +40,17 @@ function initValidateSignUpForm() {
         submitHandler: function(form) {
             form.submit();
         }
-    });   
+    });
 }
 
 function initValidateLoginForm() {
     //Tambien se puede con #loginForm
     $("#loginForm").validate({ //#register-form is form id
         rules: {
-            username: "required",
+            username: {
+                required: true,
+                minlength: 6
+            },
             password: {
                 required: true,
                 minlength: 6
@@ -55,24 +58,34 @@ function initValidateLoginForm() {
         },
         // Mensajes de errores
         messages: {
-            username: "Enter Username",
-            password: "Enter Passowrd",
-            // email: "Enter Valid Email ID"
+            username: {
+                required: "Please enter a username",
+                minLength: "Username must be at least 6 characters"
+            },
+            password: {
+                required: "Please enter a password",
+                minLength: "Username must be at least 6 characters"
+            },
         },
         submitHandler: function(form) {
-            form.submit();
+            // form.submit();
+            window.location.href = "/profile.html";
         }
     });
 }
-function initValidatePayment(){
+
+function initValidatePayment() {
     $("#shippingForm").validate({ //#register-form is form id
         rules: {
-            name: "required",
-            address:"required",
-            postal:"required",
-            town:"required",
-            province:"required",
-            phone:{
+            name: {
+                required: true,
+                minLength: 6
+            },
+            address: "required",
+            postal: "required",
+            town: "required",
+            province: "required",
+            phone: {
                 required: true,
                 minlength: 8
             }
@@ -80,11 +93,11 @@ function initValidatePayment(){
         // Mensajes de errores
         messages: {
             name: "Enter Username",
-            address:"Enter Address",
-            postal:"Enter Postal Code",
-            town:"Enter Town",
-            province:"Enter Province",
-            phone:{
+            address: "Enter Address",
+            postal: "Enter Postal Code",
+            town: "Enter Town",
+            province: "Enter Province",
+            phone: {
                 required: 'Enter Phone',
                 minlength: 'Your phone must be at least 8 characters long',
             }
